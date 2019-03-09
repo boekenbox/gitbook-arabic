@@ -1,41 +1,41 @@
-# Headless mode
+# التشغيل بدون واجهة المستخدم الرسومية \(Headless mode\)
 
 {% hint style="info" %}
-This article is meant for power users who want to run Gunbot without using the GUI.
+هذه المقالة مخصصة للمستخدمين المتقدمين الذين يرغبون في تشغيل Gunbot بدون استخدام واجهة المستخدم الرسومية.
 
-This is not an exhaustive overview of all available settings, just a quick overview of how to manually work with the config file. Refer to other parts of the wiki for detailed settings descriptions.
+هذه ليست نظرة شاملة على جميع الإعدادات المتاحة ، بل نظرة عامة سريعة حول كيفية العمل يدويًا مع ملف الإعدادات. ارجع إلى أجزاء أخرى من الويكي للاطلاع على أوصاف الإعدادات التفصيلية.
 {% endhint %}
 
-## Config file system
+## نظام ملف الإعدادات
 
-All Gunbot settings are defined in a single file named `config.js`. This is where you set up your exchange API keys, add pairs and define your strategies.
+يتم تعريف جميع إعدادات Gunbot في ملف واحد مسمى `config.js`. هذا هو المكان الذي تقوم بإعداد مفاتيح API للمنصات الخاصة بك، وإضافة أزواج التداول وتحديد الاستراتيجيات الخاصة بك.
 
-You can refer to the included `config-js-example.txt` file for an example of a config file with properly defined pairs and all needed parameters for adding each exchange. Throughout this wiki you'll find detailed descriptions for every parameter available in the config file.
+يمكنك الرجوع إلى ملف `config-js-example.txt` المرفق كمثال لملف الإعدادات مع أزواج محددة بشكل صحيح وجميع المعلمات \(parameters\) اللازمة لإضافة كل منصة. خلال هذا الويكي ، ستجد وصفًا مفصلاً لكل معلمة \(parameter\) متاحة في ملف الإعدادات.
 
-When the config file is overwritten while Gunbot is running, the changed settings will be loaded automatically.
+عندما يتم الكتابة فوق ملف الإعدادات أثناء تشغيل Gunbot، سيتم تحميل الإعدادات التي تم تغييرها تلقائيًا.
 
-Make sure that no parameters are removed when setting it up. Make sure the JSON-formatting stays intact. If you are unsure about your config file, you can validate it on [https://jsonlint.com](https://jsonlint.com) \(or a similar JSON validator\).
+تأكد من عدم إزالة أي معلمات \(parameters\) عند إعدادها. وتأكد أيضا من بقاء تنسيق JSON سليمًا. إذا لم تكن متأكدًا من ملف الإعدادات، فيمكنك التحقق من صحته على [https://jsonlint.com](https://jsonlint.com) \(أو أي مدقق JSON مماثل\).
 
-The only actions that require using the GUI are:
+الإجراءات الوحيدة التي تتطلب استخدام واجهة المستخدم الرسومية هي:
 
-* Updating master keys
-* Updating the GUNTHY wallet address
-* Transferring the software license to a third party
+* تحديث المفاتيح الرئيسية \(master keys\)
+* تحديث عنوان محفظة GUNTHY
+* نقل ترخيص البرنامج إلى طرف ثالث
 
-## Disabling the GUI
+## تعطيل واجهة المستخدم الرسومية \(GUI\)
 
-To disable the GUI completely, make the following change in the GUI section of `config.js`:
+لتعطيل واجهة المستخدم الرسومية كليًا ، قم بإجراء التغيير الآتي في قسم واجهة المستخدم الرسومية لـ `config.js`:
 
 ```text
 "GUI": {
         "enabled": false,
 ```
 
-## Connecting exchanges
+## ربط المنصات
 
-To connect an exchange, add the relevant settings to the exchange section of `config.js`.
+لربط منصة، أضف الإعدادات ذات الصلة إلى قسم المنصة في ملف `config.js`.
 
-It looks like this:
+سيبدو مثل هذا:
 
 ```text
 "binance": {
@@ -48,13 +48,15 @@ It looks like this:
         },
 ```
 
-Note that you can use a different API key for trading than the registered key. If you don't use a secondary key, you can just enter the registered key in the `key` parameter.
+لاحظ أنه يمكنك استخدام مفتاح واجهة برمجة تطبيقات \(API\) مختلف للتداول من المفتاح المسجّل. إذا كنت لا تستخدم مفتاح ثانوي ، يمكنك فقط إدخال المفتاح المسجل في المعلمة `key`.
 
-## Strategies
+## الإستراتيجيات
 
-A strategy is defined by giving it a unique name and adding it to the `strategies` section of the config file. This strategy can then be assigned to one or more trading pairs.
+يتم تعريف الاستراتيجية من خلال منحها اسمًا فريدًا وإضافتها إلى قسم `strategies`في ملف الإعداد. يمكن بعد ذلك تعيين هذه الإستراتيجية لواحد أو أكثر من أزواج التداول.
 
-It looks like this:
+
+
+سيبدو مثل هذا:
 
 ```text
 "custom-strategy": {
@@ -65,7 +67,7 @@ It looks like this:
             "BUY_LEVEL": 1,
             "GAIN": 0.5,
 
-(many lines cut out to keep this page clean)
+(تم قطع العديد من الأسطر للحفاظ على هذه الصفحة نظيفة)
 
             "SL_DISABLE_BUY": false,
             "COUNT_SELL": 9999,
@@ -73,11 +75,11 @@ It looks like this:
         },
 ```
 
-## Defining pairs and overrides
+## تحديد الأزواج والتجاوزات
 
-In the `pairs` section of the config file you can add one or more pairs inside a block specifying the exchange the pairs will run on.
+في قسم الـ`pairs` من ملف التهيئة يمكنك إضافة واحد أو أكثر من الأزواج داخل الكتلة التي تحدد المنصة التي سيتم تشغيل الأزواج عليه.
 
-Each pair must be assigned an existing strategy, it must be specified if the pair is enabled or not.
+يجب تعيين إستراتيجية حالية لكل زوج ، ويجب تحديدها إذا تم تمكين هذا الزوج أم لا.
 
 ```text
 "Binance": {
@@ -91,7 +93,7 @@ Each pair must be assigned an existing strategy, it must be specified if the pai
         },
 ```
 
-The override section allows for pair specific modifications to the assigned strategy. Any strategy parameter can be used as an override.
+يسمح قسم التجاوز بإدخال تعديلات محددة للزوج على الإستراتيجية المعينة. يمكن استخدام أي معلمة استراتيجية \(parameter\) كتجاوز.
 
-In the example above the pair will run the SMACROSS strategy, with a `TRADING_LIMIT` different from what is defined in the strategy itself.
+في المثال أعلاه، هذا الزوج سيتم معه تشغيل استراتيجية SMACROSS، مع `TRADING_LIMIT`يختلف عما هو محدد في الاستراتيجية نفسها.
 

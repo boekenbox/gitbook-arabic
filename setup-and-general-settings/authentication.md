@@ -1,14 +1,14 @@
-# Authentication
+# المصادقة \(Authentication\)
 
-## Password
+## كلمه المرور
 
-The first time you visit the Gunbot GUI in your browser, you'll be asked to register your password.
+في المرة الأولى التي تزور فيها واجهة المستخدم الرسومية Gunbot GUI في متصفحك ، سيُطلب منك تسجيل كلمة المرور الخاصة بك.
 
-## Two factor authentication \(2FA\)
+## المصادقة الثنائية \(2FA\)
 
-Gunbot supports two factor authentication, using Google Authenticator, Authy or similar apps.
+يدعم Gunbot المصادقة الثنائية ، باستخدام Google Authenticator أو Authy أو تطبيقات مشابهة.
 
-To enable 2FA, go to **Settings** &gt; **Authentication**.
+لتمكين 2FA ، انتقل إلى **الإعدادات** \(**Settings\)&gt; المصادقة \(Authentication\)**.
 
-![Do not scan the image above, instead use the unique QR code generated in Gunbot.](../.gitbook/assets/image-18.png)
+![&#x644;&#x627; &#x62A;&#x645;&#x633;&#x62D; &#x627;&#x644;&#x635;&#x648;&#x631;&#x629; &#x623;&#x639;&#x644;&#x627;&#x647; &#x60C; &#x628;&#x644; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x645; &#x631;&#x645;&#x632; &#x627;&#x644;&#x627;&#x633;&#x62A;&#x62C;&#x627;&#x628;&#x629; &#x627;&#x644;&#x633;&#x631;&#x64A;&#x639;&#x629; &#x627;&#x644;&#x641;&#x631;&#x64A;&#x62F; \(QR code\) &#x627;&#x644;&#x630;&#x64A; &#x62A;&#x645; &#x625;&#x646;&#x634;&#x627;&#x624;&#x647; &#x641;&#x64A; Gunbot.](../.gitbook/assets/image-18.png)
 

@@ -1,32 +1,34 @@
-# Windows installation
+# التثبيت لنظام التشغيل Windows
 
-## Instructions
+## تعليمات
 
-1. Unpack the release .zip file to a new folder
-2. Start running Gunbot by double clicking **gunthy-win.exe**
-3. Open [localhost:5000](http://localhost:5000) in a browser on the same system to access the Gunbot GUI \(modern browsers recommended, preferably Chrome or Firefox\)
+1. قم بفك ملف الإصدار .zip إلى مجلد جديد
+2. ابدأ تشغيل Gunbot عن طريق النقر المزدوج على ملف gunthy-win.exe
+3. افتح [localhost:5000](http://localhost:5000/) في متصفح على نفس النظام للوصول إلى واجهة المستخدم الرسومية لGunbot \(يوصى باستخدام المتصفحات الحديثة، ويفضل Chrome أو Firefox\)
 
 {% hint style="info" %}
-Depending on your systems settings, you may need to add a firewall rule to allow for incoming traffic on TCP port 5000.
+اعتمادا على إعدادات النظام الخاصة بك، قد تحتاج لإضافة قاعدة جديدة لجدار الحماية \(Firewall\) للسماح لحركة المرور الواردة على TCP منفذ 5000.
 {% endhint %}
 
 {% hint style="info" %}
-### Note for core users
+## ملاحظة لمستخدمي Gunbot Core
 
-the default setting is that the GUI starts automatically, but pair processing does not. Set `"start": true,` in `config.js` to start processing pairs.
+الإعداد الافتراضي هو أن واجهة المستخدم الرسومية تبدأ تلقائيا، ولكن معالجة الزوج لا. 
+
+اضبط`"start":` لتصبح`true,` في ملف `config.js` لبدء معالجة الأزواج.
 {% endhint %}
 
 {% hint style="danger" %}
-### Security notice
+## إشعار الأمن
 
-Gunbot is intended to run on your local system. Making the Gunbot GUI available from outside networks is inherently risky, only do so on your own responsibility.
+يهدف Gunbot ليعمل على النظام المحلي الخاص بك. إن جعل واجهة المستخدم الرسومية لـ Gunbot متاحة من الشبكات الخارجية أمر محفوف بالمخاطر بطبيعته ، ولا تفعل ذلك إلا على مسؤوليتك الخاصة.
 
-Considerable efforts went into securing the GUI, but please understand that achieving 100% security is not realistic.
+تم بذل جهود كبيرة لتأمين واجهة المستخدم الرسومية ، ولكن يرجى إدراك أن تحقيق الأمان بنسبة 100٪ ليس أمراً واقعياً.
 {% endhint %}
 
-## Installation video
+## فيديو التثبيت
 
 {% embed url="https://youtu.be/ZGDSZbYmWDc" caption="" %}
 
-_The video above was made for Gunbot v10, however the basic steps still apply._
+_تم إعداد الفيديو أعلاه للإصدار العاشر من Gunbot، ولكن الخطوات الأساسية لا تزال سارية._
 

@@ -9,39 +9,39 @@ description: >-
 ## الميزات والتغييرات الجديدة 
 
 * **دعم منصة Bitmex:** يدعم Gunbot الآن التداول بالرافعة المالية في منصتي  Bitmex and Bitmex testnet. الوظيفة الجديدة `PRE_ORDER`تتيح لك الحصول على سجل الطلبيات \(order book\) لزيادة فرصة امتلاء أوامر \(limit orders\). وعن طريق `MAKER_FEES`  كل الصفقات يمكن وضعها في سجل الطلبيات ك\(post only orders\) مما يجعل Gunbot صانعا للسوق!
-* **Margin trading strategies:** Strategies for Bitmex offer triggers to go long, short, stop and close on the desired ROE - or trail ROE up!
-* **Blockchain license verification**: Using GUNTHY token, it is now possible to self-manage your API keys for free. Read more about [Managing API keys](https://github.com/GuntharDeNiro/BTCT/wiki/api-key-management).
-* **Improved ichimoku:** Both the [regular](https://github.com/GuntharDeNiro/BTCT/wiki/Ichimoku) and [margin](https://github.com/GuntharDeNiro/BTCT/wiki/Ichimoku-margin) version of the ichimoku strategy got a lot more powerful, you can now choose to open and close trades using either Tenkan-Sen, Kumo or Kijun-Sen.
-* **Market orders:** Option to use market orders instead of limit orders, customizable for all order types. Works on exchanges that support Market orders: Binance, Bitfinex, Bitmex, Coinbase Pro, Kraken and Poloniex.
-* **List view in GUI dashboard**: New list view for pairs on the dashoard: all relevant info in one quick overview, improves load times especially for setups with many trading pairs.
-* **Chart improvements**: The GUI can now show all Gunbot supported indicators. Trading targets are now shown in charts.
-* **Renko candles:** You can now use Renko candles instead of regular candle sticks \(Currently only works for margin trading with ichimoku\).
-* **Deprecating** `CANCEL_ORDERS_CYCLE_CAP` **except when using** `MAKER_FEES`: orders are now only automatically cancelled if bid/ask are above/below the order rate.
-* **Retain GUI access on startup errors**: Automatically stop Gunbot core when ran without pairs. If startup errors occur, a Telegram notification is sent and core gets stopped.
-* **Dark theme for the settings page**: the settings page in the GUI is now dark.
-* **Renamed executables**: the main executable files got renamed to be more coherent between operating systems.
-* **Various small changes**
+* **استراتيجيات التداول بالهامش: الاستراتيجيات لمنصة** Bitmex توجه المحفزات \(triggers\) لفتح صفقات شراء \(long\) أو صفقات بيع \(short\) أو وقف وإغلاق الصفقة عند الوصول إلى ROE المطلوب أو trail ROE.
+* **التحقق من ترخيص على شبكة Blockchain:** باستخدام عملة GUNTHY ، أصبح من الممكن الآن إدارة مفاتيح API ذاتيًا مجانًا. لقراءة المزيد حول [إدارة مفاتيح API](https://github.com/GuntharDeNiro/BTCT/wiki/api-key-management).
+* **تحسين استراتيجية ichimoku:** كل من الإصدار [العادي ](https://github.com/GuntharDeNiro/BTCT/wiki/Ichimoku)[والهامش ](https://github.com/GuntharDeNiro/BTCT/wiki/Ichimoku-margin)من استراتيجية ichimoku أصبح أكثر قوة ، يمكنك الآن اختيار فتح وإغلاق الصفقات باستخدام Tenkan-Sen أو Kumo أو Kijun-Sen.
+* **أوامر السوق:** خيار استخدام أوامر السوق \(Mareket Orders\) بدلاً من الأوامر المحددة \(Limit Oreders\) ، أصبح قابلا للتخصيص لجميع أنواع الأوامر. ويعمل على المنصات التي تدعم أوامر السوق: Binance وBitfinex وBitmex وCoinbase Pro وKraken وPoloniex.
+* **عرض القائمة في لوحة تخكم واجهة المستخدم الرسومية:** عرض قائمة جديدة للأزواج في لوحة التحكم: كل المعلومات ذات الصلة في نظرة عامة واحدة سريعة ، وتحسين أوقات التحميل خاصة للإعدادات مع العديد من أزواج التداول.
+* **تحسينات الرسم البياني:** يمكن لـ لواجهة التحكم الرسومية الآن إظهار جميع المؤشرات المدعومة من Gunbot. أهداف التداول تظهر الآن في الرسم البياني.
+* **شموع رينكو:** يمكنك الآن استخدام الشموع رينكو بدلا من الشموع العادية \(حاليا يعمل فقط للتداول بنظام الهامش مع استراتيجية ichimoku\).
+* **استبعاد**`CANCEL_ORDERS_CYCLE_CAP`**باستثناء عند استخدام** `MAKER_FEES`**:** يتم الآن إلغاء الطلبات تلقائيًا فقط إذا كان سعر العرض / الطلب أعلى أو أقل من سعر الأمر.
+* **الاحتفاظ بالوصول لواجهة المستخدم الرسومية عند حدوث أخطاء بدء التشغيل:** تلقائيا يتم وقف Gunbot Core عندما يتم تشغيله بدون أزواج تداول. في حالة حدوث أخطاء بدء التشغيل ، يتم إرسال إشعار Telegram ويتم إيقاف Gunbot Core.
+*  **المظهر الداكن لصفحة الإعدادات:** صفحة الإعدادات في واجهة المستخدم الرسومية أصيحت داكنة الآن.
+* **إعادة تسمية الملفات التنفيذية:** تمت إعادة تسمية الملفات القابلة التنفيذية الرئيسية لتكون أكثر تماسكًا بين أنظمة التشغيل.
+* **تغييرات صغيرة مختلفة**
 
 \*\*\*\*
 
 ## إصلاحات الأخطاء
 
-Many critical issues were already patched in the bugfix releases for v11. Notable new fixes:
+تم إصلاح العديد من المشكلات المهمة بالفعل في إصدارات إصلاح الأخطاء الخاصة بالإصدار 11. أما الإصلاحات الجديدة الملحوظة فهي:
 
-* Fix an issue that would not save some settings changes made in the GUI.
-* Work around Binance "minPrice" / "maxPrice" being 0.
-* Improved handling of PAX & TUSD as base currency.
-* Improved handling of sell orders at Binance.
-* Fixes to SMACROSS, MACD and MACDH that prevented trades in specific conditions.
-* Fix "RSI undefined" callback.
-* Make sure a pair actually sold before letting `COUNT_SELL` disable it.
-* Fix support for TUSD as base currency at Binance.
-* Fix libraries for Raspberry Pi support.
-* Reduced data/resource usage for the GUI.
-* [Workaround](https://github.com/GuntharDeNiro/BTCT/wiki/TradingView#to-close-positions-at-bitfinex-use-the-following-alerts) for an issue with Bitfinex not accepting close orders.
-* Fix an issue that reset DU count after a partial sell order.
-* Fix an issue with marging trading through TV add-on on Huobi.
-* Various smaller fixes.
+* إصلاح الخطأ الذي كان يؤدي إلى عدم حفظ بعض تغييرات الإعدادات التي تم إجراؤها في واجهة المستخدم الرسومية.
+* العمل لجعل "minPrice" / "maxPrice" الخاص بمنصة Binance يكون صفرا.
+* تحسين التعامل مع PAX و TUSD كعملة أساسية.
+* تحسين التعامل مع أوامر البيع في منصة Binance.
+* إصلاح مؤشرات SMACROSS و MACD و MACDH التي كانت تمنع التداولات في ظروف محددة.
+* إصلاح رد الاتصال \(callback\) "RSI undefined".
+* التأكد من بيع الزوج فعليًا قبل السماح لـ `COUNT_SELL`بتعطيله.
+* إصلاح دعم TUSD كعملة أساسية في منصة Binance.
+* تثبيت المكتبات لدعم نظام Raspberry Pi.
+* تقليل استخدام البيانات / الموارد لواجهة المستخدم الرسومية.
+* الحل البديل ل[مشكلة ](https://github.com/GuntharDeNiro/BTCT/wiki/TradingView#to-close-positions-at-bitfinex-use-the-following-alerts)منصة Bitfinex التي كانت لا تقبل أوامر الإغلاق.
+* إصلاح المشكلة التي كانت تعيد تعيين DU بعد أمر بيع جزئي.
+* حل مشكلة التداول بالهامش من خلال إضافة Tradingview على منصة Huobi.
+* إصلاحات صغيرة مختلفة.
 
 ## الترقية
 

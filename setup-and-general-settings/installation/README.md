@@ -4,9 +4,9 @@
 
 {% page-ref page="download.md" %}
 
-## Installation instructions
+## تعليمات التثبيت
 
-Installation guides per platform can be found here:
+يمكن العثور على أدلة التثبيت لكل نظام أساسي هنا:
 
 {% page-ref page="windows.md" %}
 

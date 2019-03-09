@@ -1,10 +1,10 @@
 # تحميل البرنامج
 
 {% hint style="info" %}
-**Tip:** Bookmark the download link for your Gunbot edition, this is where you get updates.
+**نصيحة:** ضع إشارة مرجعية على رابط التنزيل لإصدار Gunbot الخاص بك ، حيث يمكنك الحصول على التحديثات.
 {% endhint %}
 
-**Gunbot Standard edition and higher:** [https://github.com/GuntharDeNiro/BTCT/releases](https://github.com/GuntharDeNiro/BTCT/releases)
+**لنسخة Gunbot Standard أو أعلى منها:** [https://github.com/GuntharDeNiro/BTCT/releases](https://github.com/GuntharDeNiro/BTCT/releases)
 
-**Gunbot Starter edition:** [https://github.com/GuntharDeNiro/Gunthy/releases/](https://github.com/GuntharDeNiro/Gunthy/releases/)
+**لنسخة Gunbot Starter \(المبتدئين\):**  [https://github.com/GuntharDeNiro/Gunthy/releases](https://github.com/GuntharDeNiro/Gunthy/releases/)
 

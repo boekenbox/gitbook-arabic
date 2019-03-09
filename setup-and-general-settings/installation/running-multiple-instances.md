@@ -1,14 +1,14 @@
-# Running multiple instances
+# تشغيل نسخ متعددة على جهاز واحد
 
-To run multiple instances of Gunbot, just make a copy of its folder for each instance and make sure the following settings parameters are unique for each instance:
+لتشغيل نسخ متعددة من Gunbot ، ما عليك سوى إنشاء نسخة من مجلد Gunbot لكل نسخة والتأكد من أن معلمات الإعدادات \(Parameters\) الآتية مختلفة لكل نسخة:
 
-* `port` - both in the GUI and ws section
-* `clientport` - in the ws section
-* `TOKEN` in the bot section
+* `port` -   في كل من قسمي GUI and ws 
+* `clientport` - في قسم ws 
+* `TOKEN` في قسم bot 
 
-The GUI of each instance will be available on localhost through the specified port number.
+ستكون واجهة المستخدم الرسومية لكل نسخة متاحة على المضيف المحلي \(localhost\) من خلال رقم المنفذ\(port number\) المحدد.
 
 {% hint style="info" %}
-Use a text editor like Notepad++ to edit the `config.js` file to make the required changes described above.
+استخدم محرر نصوص مثل Notepad ++ لتحرير ملف `config.js` لإجراء التغييرات المطلوبة الموضحة أعلاه.
 {% endhint %}
 
