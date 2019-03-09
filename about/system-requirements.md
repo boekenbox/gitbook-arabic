@@ -1,15 +1,15 @@
-# System requirements
+# متطلبات التشغيل
 
-## Supported platforms
+## الأنظمة المدعومة
 
-Gunbot runs from your own Windows, macOS, Linux or ARM computer or server.
+يعمل Gunbot من حاسبك الشخصي أو السيرفرات التي تعمل بأنظمة تشغيل Windows أو MacOS أو Linux أو ARM .
 
-You are free to run multiple instances across multiple platforms and devices.
+يمكنك تشغيل أكثر من نسخة عبر أنظمة وأجهزة متعددة بحرية كاملة.
 
-## Recommended minimum system specs
+## الحد الأدنى من مواصفات النظام الموصى بها
 
-* **CPU**: 64-bit
-* **RAM**: 2 GB
-* **Disk space**: 10 GB free disk space
-* **Network**: stable broadband network connection
+* **وحدة المعالجة المركزية \(CPU\):** 64 بت
+* **الذاكرة العشوائية \(RAM\):** 2 جيجابايت
+* **مساحة القرص:** 10جيجابايت من المساحة الخالية على القرص
+* **الشبكة:** اتصال شبكة واسع النطاق مستقر
 

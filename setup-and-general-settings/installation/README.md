@@ -1,6 +1,6 @@
-# Installation & startup
+# التثبيت وبدء التشغيل
 
-## Download Gunbot
+## تحميل Gunbot
 
 {% page-ref page="download.md" %}
 

@@ -1,21 +1,21 @@
 ---
-description: Gunbot currently supports trading at the following exchanges.
+description: 'يدعم Gunbot حاليًا التداول في المنصات الآتية:'
 ---
 
-# Supported exchanges
+# المنصات المدعومة
 
-| Exchange | Name in config | Native strategies | TradingView alerts |
+| تنبيهات TradingView | الاستراتيجيات الأصلية | الاسم في الإعدادت | المنصة |
 | :--- | :--- | :--- | :--- |
-| **Binance** | `binance` | Regular | Regular |
-| **Bittrex** | `bittrex` | Regular | Regular |
-| **Bitfinex** | `bitfinex` | Regular | Regular & Margin |
-| **Bitmex** | `bitmex` | Margin | Margin |
-| **Bitmex testnet** | `bitmex_testnet` | Margin | Margin |
-| **CEX** | `cex` | Regular | Regular |
-| **Coinbase Pro** | `gdax` | Regular | Regular |
-| **Cryptopia** | `cryptopia` | Regular | Regular |
-| **Huobi** | `huobi` | Regular | Regular & Margin |
-| **Kraken** | `kraken` | Regular | Regular & Margin |
-| **KuCoin** | `kucoin` | Regular | Regular |
-| **Poloniex** | `poloniex` | Regular | Regular & Margin |
+| عادي | عادي | `binance` | **Binance** |
+| عادي | عادي | `bittrex` | **Bittrex** |
+| عادي وهامش | عادي | `bitfinex` | **Bitfinex** |
+| هامش | هامش | `bitmex` | **Bitmex** |
+| هامش | هامش | `bitmex_testnet` | **Bitmex testnet** |
+| عادي | عادي | `cex` | **CEX** |
+| عادي | عادي | `gdax` | **Coinbase Pro** |
+| عادي | عادي | `cryptopia` | **Cryptopia** |
+| عادي وهامش | عادي | `huobi` | **Huobi** |
+| عادي وهامش | عادي | `kraken` | **Kraken** |
+| عادي | عادي | `kucoin` | **KuCoin** |
+| عادي وهامش | عادي | `poloniex` | **Poloniex** |
 

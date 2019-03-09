@@ -1,18 +1,18 @@
 ---
-description: 'This wiki is written for the latest stable Gunbot release: v12'
+description: هذه الويكي للإصدار الأخير المستقر من Gunbot v12
 ---
 
-# Welcome to the Arabic Gunbot wiki
+# مرحبا بكم في موسوعة Gunbot النسخة العربية
 
-**Gunbot is an easy to use, advanced crypto trading bot. You define your trading strategy and watch Gunbot do the trading for you. Enabling you to get up to hundreds of profitable trades per day, 24/7.**
+**يعد Gunbot متداولا آليا متقدما في العملات الرقمية، وهو سهل الاستخدام، ويمكنك من خلاله تحديد استراتيجيات التداول، ثم تتركه يتداول نيابة عنك. مما يمكنك من تنفيذ مئات الصفقات الرابحة كل يوم 24/7.**
 
-For security reasons, Gunbot runs on your local computer or your server only. This way your trading API secret stays private, and nobody can influence or monitor your trading.
+ولأسباب تتعلق بأمنك وسرية معلوماتك، فإن Gunbot يعمل على حاسبك الشخصي أو على السيرفر الخاص بك. وبهذه الطريقة يظل ال Api key و ال secret key في منتهى السرية، ولا يستطيع أحد أن يؤثر أو يراقب أي عملية من تداولك.
 
-No need for a subscription, a one time fee gets you lifetime support and software updates.
+وليس هناك حاجة للتسجيل، دفعة مالية لمرة واحدة تعطيك دعم وتحديثات للبرنامج مدى الحياة.
 
-> _We aim to build the perfect money machine._
+> _نحن نهدف إلى بناء آلة صنع مال مثالية._
 
-#### Gunbot is used by thousands of users and has an awesome community ❤️
+#### يستخدم Gunbot آلاف المتداولين ولديه مجتمع رائع ❤️
 
 ![](.gitbook/assets/image-17.png)
 
@@ -25,10 +25,12 @@ No need for a subscription, a one time fee gets you lifetime support and softwar
 {% page-ref page="how-to-work-with-gunbot/editing-strategies-and-pairs/" %}
 
 {% hint style="warning" %}
-## Disclaimer
+> ## **إخلاء المسئولية القانونية:**
 
-The information provided on this wiki does not constitute investment advice, financial advice, trading advice, or any other sort of advice, and you should not treat any of the wiki's content as such. Gunbot does not recommend that any asset should be bought, sold, or held by you. Nothing on this website should be taken as an offer to buy, sell or hold a cryptocurrency. Do conduct your own due diligence and consult your financial advisory before making any investment decision. Gunbot will not be held responsible for the investment decisions you make based on the information published on this wiki.
+لا تمثل المعلومات المقدمة على موقع ويكي هذا نصيحة استثمارية أو مشورة مالية أو نصيحة تجارية أو أي نوع آخر من النصائح ، ولا يجب أن تعامل أيًا من محتوى الويكي على هذا النحو. ولا يوصي Gunbot بضرورة شراء أي أصل أو بيعه أو الاحتفاظ به. لا شيء على هذا الموقع ينبغي أن يؤخذ على أنه عرض لشراء أو بيع أو عقد أي من العملات أو الأصول الرقمية. قم بإجراء العناية الواجبة الخاصة بك وقم باستشارة مستشارك المالي قبل اتخاذ أي قرار استثماري. لن يكون Gunbot مسئولاً عن قرارات الاستثمار التي تقوم بها استنادًا إلى المعلومات المنشورة على هذا الويكي.
 {% endhint %}
 
-**Project origin:** [BitcoinTalk thread](https://bitcointalk.org/index.php?topic=1715214.0).
+
+
+**أصل هذا المشروع:** الموضوع المنشور على منتدى  [BitcoinTalk](https://bitcointalk.org/index.php?topic=1715214.0).
 

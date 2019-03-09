@@ -1,18 +1,18 @@
 # Table of contents
 
-* [Welcome to the Arabic Gunbot wiki](README.md)
+* [مرحبا بكم في موسوعة Gunbot النسخة العربية](README.md)
 
-## About
+## حول البرنامج
 
-* [What's new in v12?](about/whats-new-v12.md)
-* [How to purchase Gunbot](about/resellers.md)
-* [Supported exchanges](about/supported-exchanges.md)
-* [System requirements](about/system-requirements.md)
+* [ما الجديد في الإصدار 12؟](about/whats-new-v12.md)
+* [كيف تشتري Gunbot](about/resellers.md)
+* [المنصات المدعومة](about/supported-exchanges.md)
+* [متطلبات التشغيل](about/system-requirements.md)
 
-## Setup & general settings
+## التهيئة والإعدادات العامة
 
-* [Installation & startup](setup-and-general-settings/installation/README.md)
-  * [Download software](setup-and-general-settings/installation/download.md)
+* [التثبيت وبدء التشغيل](setup-and-general-settings/installation/README.md)
+  * [تحميل البرنامج](setup-and-general-settings/installation/download.md)
   * [Windows installation](setup-and-general-settings/installation/windows.md)
   * [macOS installation](setup-and-general-settings/installation/macos.md)
   * [Linux installation](setup-and-general-settings/installation/linux.md)
@@ -35,14 +35,14 @@
 
 ## How to work with Gunbot
 
-* [Learning the basics](how-to-work-with-gunbot/basic-workings/README.md)
+* [تعلم الأساسيات](how-to-work-with-gunbot/basic-workings/README.md)
   * [Trading logic](how-to-work-with-gunbot/basic-workings/trading-logic.md)
   * [Important settings](how-to-work-with-gunbot/basic-workings/balance-settings.md)
   * [Order types](how-to-work-with-gunbot/basic-workings/order-types.md)
   * [Period](how-to-work-with-gunbot/basic-workings/period.md)
   * [Trailing](how-to-work-with-gunbot/basic-workings/trailing.md)
   * [ROE trailing](how-to-work-with-gunbot/basic-workings/roe-trailing.md)
-* [Editing strategies and pairs](how-to-work-with-gunbot/editing-strategies-and-pairs/README.md)
+* [تعديل الاستراتيجيات وأزواج التداول \(العملات\)](how-to-work-with-gunbot/editing-strategies-and-pairs/README.md)
   * [Strategy configurator](how-to-work-with-gunbot/editing-strategies-and-pairs/strategy-configurator.md)
   * [Trading pairs](how-to-work-with-gunbot/editing-strategies-and-pairs/trading-pairs.md)
 * [Monitoring](how-to-work-with-gunbot/monitoring.md)

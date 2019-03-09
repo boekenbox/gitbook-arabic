@@ -1,4 +1,4 @@
-# Editing strategies and pairs
+# تعديل الاستراتيجيات وأزواج التداول \(العملات\)
 
 You can completely configure your bot from the settings page.
 

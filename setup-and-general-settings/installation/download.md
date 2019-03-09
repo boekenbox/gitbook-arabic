@@ -1,4 +1,4 @@
-# Download software
+# تحميل البرنامج
 
 {% hint style="info" %}
 **Tip:** Bookmark the download link for your Gunbot edition, this is where you get updates.

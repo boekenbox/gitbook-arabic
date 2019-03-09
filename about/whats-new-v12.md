@@ -1,14 +1,14 @@
 ---
 description: >-
-  Here's a quick overview of the most important changes introduced with Gunbot
-  v12.
+  فيما يأتي نظرة عامة سريعة حول أهم التغييرات التي تم إدخالها على Gunbot الإصدار
+  12.
 ---
 
-# What's new in v12?
+# ما الجديد في الإصدار 12؟
 
-## New features / changes
+## الميزات والتغييرات الجديدة 
 
-* **Bitmex support:** Gunbot now supports leveraged trading at Bitmex and Bitmex testnet. The new `PRE_ORDER` function lets you get ahead of the order book to increase the chance limit orders get filled. With `MAKER_FEES` all trades can be placed as post only orders, making Gunbot a market maker!
+* **دعم منصة Bitmex:** يدعم Gunbot الآن التداول بالرافعة المالية في منصتي  Bitmex and Bitmex testnet. الوظيفة الجديدة `PRE_ORDER`تتيح لك الحصول على سجل الطلبيات \(order book\) لزيادة فرصة امتلاء أوامر \(limit orders\). وعن طريق `MAKER_FEES`  كل الصفقات يمكن وضعها في سجل الطلبيات ك\(post only orders\) مما يجعل Gunbot صانعا للسوق!
 * **Margin trading strategies:** Strategies for Bitmex offer triggers to go long, short, stop and close on the desired ROE - or trail ROE up!
 * **Blockchain license verification**: Using GUNTHY token, it is now possible to self-manage your API keys for free. Read more about [Managing API keys](https://github.com/GuntharDeNiro/BTCT/wiki/api-key-management).
 * **Improved ichimoku:** Both the [regular](https://github.com/GuntharDeNiro/BTCT/wiki/Ichimoku) and [margin](https://github.com/GuntharDeNiro/BTCT/wiki/Ichimoku-margin) version of the ichimoku strategy got a lot more powerful, you can now choose to open and close trades using either Tenkan-Sen, Kumo or Kijun-Sen.
@@ -24,7 +24,7 @@ description: >-
 
 \*\*\*\*
 
-## **Bugfixes**
+## إصلاحات الأخطاء
 
 Many critical issues were already patched in the bugfix releases for v11. Notable new fixes:
 
@@ -43,15 +43,15 @@ Many critical issues were already patched in the bugfix releases for v11. Notabl
 * Fix an issue with marging trading through TV add-on on Huobi.
 * Various smaller fixes.
 
-## **Upgrading**
+## الترقية
 
-Download the update and unpack it to a new folder, copy the `config.js` and `gunbotgui.db` files from your previous v11 installation into the new folder to keep your settings. In case you used https for the GUI, also make sure to copy both the key and certificate files to the new folder.
+قم بتنزيل التحديث وفك ضغطه إلى مجلد جديد ، وقم بنسخ ملفات `config.js` و `gunbotgui.db`من التنصيب السايق للإصدار 11 في المجلد الجديد للحفاظ على الإعدادات. في حالة استخدام https لواجهة المستخدم الرسومية، تأكد أيضًا من نسخ كل من المفتاح وملفات الشهادات إلى المجلد الجديد.
 
-If you have pairs that are already in DU or RT, also copy the /json folder from v11 to v12.
+إذا كان لديك أزواج موجودة بالفعل في DU أو RT ، فقم أيضًا بنسخ مجلد json من الإصدار 11 إلى الإصدار 12.
 
-New strategy parameters for v12 will be automatically added through the GUI the first time you update a strategy. This happens on a per strategy basis.
+سيتم إضافة معلمات الإستراتيجية \(Parameters\) الجديدة لـلإصدار 12 تلقائيًا من خلال واجهة المستخدم الرسومية في أول مرة تقوم فيها بتحديث استراتيجية. هذا يحدث على أساس كل استراتيجية.
 
-_Due to new libraries used, you cannot simply overwrite the executable for this release._
+_بسبب المكتبات الجديدة المستخدمة، لا يمكنك ببساطة الكتابة فوق الملف التنفيذي \(exe\) لهذا الإصدار._
 
 {% page-ref page="../setup-and-general-settings/installation/download.md" %}
 
