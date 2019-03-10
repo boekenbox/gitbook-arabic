@@ -1,45 +1,45 @@
-# Telegram notifications
+# إشعارات التليجرام \(Telegram\)
 
-Gunbot can send notifications on Telegram for every trade it places.
+يمكن لـ Gunbot إرسال إشعارات على Telegram لكل تداول يقوم به.
 
-To set this up, go to **Settings** &gt; **Telegram**.
+لإعداد هذا ، انتقل إلى الإعدادات \(**Settings\)** &gt; التليجرام  **\(Telegram\)**.
 
 ![Available settings options for Telegram notifications.](../.gitbook/assets/image-24.png)
 
-## Steps to create a Telegram bot
+## خطوات إنشاء بوت Telegram
 
-Notifications work by first creating a personal bot on Telegram, Gunbot then connects to this bot to push notifications to you.
+تعمل الإشعارات أولا من خلال إنشاء بوت شخصي على Telegram، ثم يتصل Gunbot بهذا البوت لدفع الإشعارات إليك.
 
-This is how to create a bot:
+هذه هي الطريقة لإنشاء البوت:
 
-1. Talk to [@botfather](https://telegram.me/botfather). Create a new bot with the command /newbot and choose a name and username for your bot. Save the bot token shown
-2. Talk to [@myidbot](https://telegram.me/myidbot) to see your Chat ID, save it.
-3. Enable Telegram notifications for Gunbot, and enter the token and ID you've just gathered.
-4. Start a chat with the username you've picked for your bot, and hit the start button. If you don't see a start button, write "/start" and click on it afterwards.
+1. افتح محادثة مع [@botfather](https://telegram.me/botfather). ثم قم بإنشاء بوت جديد باستخدام الأمر /newbot واختر اسمًا واسمًا للمستخدم للبوت الخاص بك \(username\)، ثم احفظ رمز البوت \(Token Id\).
+2. افتح محادثة مع [@myidbot](https://telegram.me/myidbot) لرؤية معرف الدردشة الخاصة بك \(Chat ID\) ثم قم بحفظه.
+3. قم بتمكين إشعارات Telegram لـ Gunbot، وأدخل رمز البوت \(Token Id\) ومعرف الدردشة \(Chat ID\) الذي جمعته منذ قليل.
+4. ابدأ محادثة باستخدام اسم المستخدم الذي اخترته لبوتك \(username\)، ثم اضغط على زر البدء. إذا كنت لا ترى زر البدء ، فاكتب "/start" ثم انقر فوقه.
 
-## Settings descriptions
+## وصف الإعدادات
 
-Below you'll find detailed descriptions of all available parameters for Telegram notifications.
+ستجد بالأسفل وصفا مفصلا لجميع المعلمات المتاحة \(available parameters\) لإخطارات Telegram.
 
-### Enabled
+### مفعل \(Enabled\)
 
 {% tabs %}
-{% tab title="Description" %}
-Enable this to have Gunbot send trade notifications through Telegram.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `TELEGRAM_ENABLED`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="القيم" %}
+**القيم:** true or false
 
-**Default value:** false
+**القيمة الافتراضية:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `TELEGRAM_ENABLED`
+{% tab title="الوصف" %}
+تمكين هذا لجعل Gunbot يرسل إشعارات التداول عبر Telegram.
 {% endtab %}
 {% endtabs %}
 
-### Bot Nickname
+### اسم الشهرة \(Bot Nickname\)
 
 {% tabs %}
 {% tab title="Description" %}
@@ -56,6 +56,12 @@ Use this to easily check from which bot instance the notifications have been sen
 
 {% tab title="Name" %}
 Parameter name in `config.js`: `TELEGRAM_NICK`
+{% endtab %}
+
+{% tab title="الوصف" %}
+يبدأ كل إخطار تداول باسم الشهرة الذي يتم تعيينه هنا.
+
+استخدم هذا لتتحقق بسهولة من أي من نسخة bot التي ترسل الإشعارات.
 {% endtab %}
 {% endtabs %}
 

@@ -1,16 +1,16 @@
-# Swap exchanges
+# تبديل المنصات \(Swap exchanges\)
 
-All Gunbot license types can use an API slot system, this allows you to switch between different supported exchange accounts at no extra costs.
+يمكن لجميع أنواع رخصة Gunbot استخدام نظام فتحة API ، وهذا يسمح لك بالتبديل بين حسابات المنصات المدعومة المختلفة دون أي تكاليف إضافية.
 
-## Swap exchanges
+## تبديل المنصات
 
-On the **Swap Exchanges** page you can see how many API slots your license has, and enter up to this number of API keys to be registered for use.
+في صفحة تبادل المنصات، يمكنك معرفة عدد فتحات \(API\) الخاصة برخصتك، وإدخال هذا العدد من مفاتيح API ليتم تسجيلها للاستخدام.
 
 ![](../../../.gitbook/assets/image-3%20%281%29.png)
 
 {% hint style="success" %}
-If you regularly switch between exchange accounts, it's easiest to leave your exchange API details in the exchange section for every exchange you plan to use.
+إذا كنت تقوم بالتبديل بين حسابات المنصات بشكل منتظم ، فمن الأسهل ترك تفاصيل API المنصة في قسم المنصات لكل منصة ترغب في استخدامها.
 
-Then when you want to switch, just copy the master key from there and enter it on the Swap Licensed exchanges page.
+ثم عندما تريد التبديل ، فقط انسخ المفتاح الرئيسي من هناك وأدخله في صفحة تبديل المنصات المرخصة.
 {% endhint %}
 

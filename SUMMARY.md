@@ -17,21 +17,21 @@
   * [التثبيت لنظام التشغيل macOS](setup-and-general-settings/installation/macos.md)
   * [التثبيت لنظام التشغيل Linux](setup-and-general-settings/installation/linux.md)
   * [التثبيت لنظام التشغيل ARM](setup-and-general-settings/installation/arm.md)
-  * [How to enable SSL/TLS](setup-and-general-settings/installation/enable-ssl-tls.md)
+  * [كيف تفعل شهادات الأمان SSL/TLS](setup-and-general-settings/installation/enable-ssl-tls.md)
   * [تشغيل نسخ متعددة على جهاز واحد](setup-and-general-settings/installation/running-multiple-instances.md)
   * [التشغيل بدون واجهة المستخدم الرسومية \(Headless mode\)](setup-and-general-settings/installation/headless-mode.md)
 * [المصادقة \(Authentication\)](setup-and-general-settings/authentication.md)
-* [Exchange & license settings](setup-and-general-settings/exchange-and-license-settings/README.md)
-  * [Register GUNTHY wallet](setup-and-general-settings/exchange-and-license-settings/gunthy-wallet/README.md)
-    * [How to create a wallet](setup-and-general-settings/exchange-and-license-settings/gunthy-wallet/how-to-create-a-wallet.md)
-  * [Connect exchange](setup-and-general-settings/exchange-and-license-settings/connect-exchange/README.md)
-    * [Swap exchanges](setup-and-general-settings/exchange-and-license-settings/connect-exchange/api-slots.md)
-    * [Creating API keys](setup-and-general-settings/exchange-and-license-settings/connect-exchange/creating-api-keys.md)
-* [Telegram notifications](setup-and-general-settings/telegram-notifications.md)
-* [Other global settings](setup-and-general-settings/other-global-settings/README.md)
-  * [Bot settings](setup-and-general-settings/other-global-settings/bot-settings.md)
-  * [GUI settings](setup-and-general-settings/other-global-settings/gui-settings.md)
-  * [Websockets](setup-and-general-settings/other-global-settings/websockets.md)
+* [إعدادات المنصة والترخيص](setup-and-general-settings/exchange-and-license-settings/README.md)
+  * [تسجيل محفظة GUNTHY](setup-and-general-settings/exchange-and-license-settings/gunthy-wallet/README.md)
+    * [كيفية إنشاء محفظة](setup-and-general-settings/exchange-and-license-settings/gunthy-wallet/how-to-create-a-wallet.md)
+  * [ربط المنصة](setup-and-general-settings/exchange-and-license-settings/connect-exchange/README.md)
+    * [تبديل المنصات \(Swap exchanges\)](setup-and-general-settings/exchange-and-license-settings/connect-exchange/api-slots.md)
+    * [إنشاء مفاتيح API](setup-and-general-settings/exchange-and-license-settings/connect-exchange/creating-api-keys.md)
+* [إشعارات التليجرام \(Telegram\)](setup-and-general-settings/telegram-notifications.md)
+* [الإعدادات العامة الأخرى](setup-and-general-settings/other-global-settings/README.md)
+  * [إعدادات البوت](setup-and-general-settings/other-global-settings/bot-settings.md)
+  * [إعدادات واجهة المستخدم الرسومية](setup-and-general-settings/other-global-settings/gui-settings.md)
+  * [إعدادات مآخذ الويب \(Websockets\)](setup-and-general-settings/other-global-settings/websockets.md)
 
 ## How to work with Gunbot
 
@@ -45,7 +45,7 @@
 * [تعديل الاستراتيجيات وأزواج التداول \(العملات\)](how-to-work-with-gunbot/editing-strategies-and-pairs/README.md)
   * [Strategy configurator](how-to-work-with-gunbot/editing-strategies-and-pairs/strategy-configurator.md)
   * [Trading pairs](how-to-work-with-gunbot/editing-strategies-and-pairs/trading-pairs.md)
-* [Monitoring](how-to-work-with-gunbot/monitoring.md)
+* [المراقبة](how-to-work-with-gunbot/monitoring.md)
 
 ## Trading strategy options
 

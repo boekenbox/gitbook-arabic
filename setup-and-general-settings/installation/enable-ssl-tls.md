@@ -1,32 +1,38 @@
-# How to enable SSL/TLS
+# كيف تفعل شهادات الأمان SSL/TLS
 
-## Run the GUI on https with a self-signed certificate
+## قم بتشغيل واجهة المستخدم الرسومية على بروتوكول https باستخدام شهادة موقعة ذاتياً
 
-To run the GUI on https, you'll need a certificate. Below are instructions to generate a self-signed certificate on Windows, Mac and Linux.
+لكي تقوم بتشغيل واجهة المستخدم الرسومية على بروتوكول https ، ستحتاج إلى شهادة. فيما يأتي تعليمات لإنشاء شهادة موقعة ذاتيًا على أنظمة Windows و Mac و Linux. 
 
 {% hint style="info" %}
-Certificates from common SSL providers work too. Just make sure to rename the files and change the file extensions to .crt and .key, then place the files in the Gunbot folder.
+تعمل الشهادات من موفري شهادات SSL \(طبقة المقابس الآمنة\) أيضًا. فقط تأكد من إعادة تسمية الملفات وتغيير امتداد الملف إلى .crt و .key ، ثم ضع الملفات في مجلد Gunbot.
 {% endhint %}
 
-Make sure to set the `https` parameter in `config.js` to `true` to actually enable https after creating a certificate.
+تأكد من تعيين معلمة `https`في `config.js` على `true`لتمكين https فعليًا بعد إنشاء الشهادة.
 
-When connecting to the GUI for the first time, you'll probably encounter a browser warning due to the use of a self-signed certificate. Create a permanent exception to not get warned again on the same browser.
+عند الاتصال بـ GUI للمرة الأولى ، قد تواجه تحذيرًا من المتصفح بسبب استخدام شهادة موقعة ذاتيًا. قم بإنشاء استثناء دائم لعدم الحصول على تحذير مرة أخرى على نفس المتصفح.
 
-**Windows**
+**ويندوز \(Windows\)**
 
-1. [Download](https://slproweb.com/products/Win32OpenSSL.html) and install OpenSSL for windows
-2. Go to the following folder: C:\OpenSSL-Win64\bin\
-3. Right click "openssl" and run as administrator, a cmd window opens
-4. Run the following command: `req -newkey rsa:2048 -nodes -keyout localhost.key -x509 -days 365 -out localhost.crt` \(you'll be asked to fill in some details, you can do this or leave the fields blank by hitting enter several times\)
-5. Copy the `localhost.key` and `localhost.crt` from C:\OpenSSL-Win64\bin to your Gunbot folder
+1. قم [بتنزيل ](https://slproweb.com/products/Win32OpenSSL.html)وتثبيت OpenSSL لنظام ويندوز.
+2. انتقل للمجلد الآتي: C:\OpenSSL-Win64\bin\
+3. انقر بزر الماوس الأيمن على "openssl" وقم بتشغيله كمسؤول ، سيفتح نافذة موجه الأوامر CMD.
+4. قم بتشغيل الأمر الآتي:`req -newkey rsa:2048 -nodes -keyout localhost.key -x509 -days 365 -out localhost.crt` \(ستتم مطالبتك بملء بعض التفاصيل ، يمكنك القيام بذلك أو ترك الحقول فارغة عن طريق الضغط على الدخول عدة مرات\)
+5. قم بنسخ`localhost.key` و`localhost.crt` من مجلد C:\OpenSSL-Win64\bin إلى مجلد Gunbot الخاص بك.
 
 **Mac**
 
-1. Open a terminal window and navigate to your Gunbot folder
-2. Run the following command `openssl req -newkey rsa:2048 -nodes -keyout localhost.key -x509 -days 365 -out localhost.crt` and make sure to enter the country code field. The rest can be left blank
+1. فتح نافذة الصالة، ثم انتقل إلى مجلد Gunbot الخاص بك
+2. قم بتشغيل الأمر الآتي:`openssl req -newkey rsa:2048 -nodes -keyout localhost.key -x509 -days 365 -out localhost.crt`
+
+وتأكد من إدخال حقل رمز البلد. ويمكنك ترك الباقي فارغًا
 
 **Linux**
 
-1. Open a terminal window and navigate to your Gunbot folder. Possibly you'll need to install openssl through your package manager first.
-2. Run the following command `openssl req -newkey rsa:2048 -nodes -keyout localhost.key -x509 -days 365 -out localhost.crt` and make sure to enter the country code field. The rest can be left blank.
+1. افتح نافذة طرفية وانتقل إلى مجلد Gunbot الخاص بك. ربما ستحتاج إلى تثبيت openssl من خلال مدير الحزم \(Package Manager\) الخاص بك أولاً.
+2. قم بتشغيل الأمر الآتي:`openssl req -newkey rsa:2048 -nodes -keyout localhost.key -x509 -days 365 -out localhost.crt`
+
+وتأكد من إدخال حقل رمز البلد. ويمكنك ترك الباقي فارغًا
+
+\*\*\*\*
 

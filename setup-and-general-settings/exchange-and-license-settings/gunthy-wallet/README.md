@@ -1,81 +1,83 @@
-# Register GUNTHY wallet
+# تسجيل محفظة GUNTHY
 
-Gunbot uses a blockchain based license validation system. It uses our own ERC-20 utility token called "GUNTHY". Using this system, you can manage your own API keys and change them anytime, or even sell your license to third party.
+يستخدم Gunbot نظام التحقق من الترخيص القائم على blockchain. ويستخدم الرمز المميز الخاص بـ ERC-20 والذي يسمى "GUNTHY". باستخدام هذا النظام ، يمكنك إدارة مفاتيح API الخاصة بك وتغييرها في أي وقت ، أو حتى بيع ترخيصك لطرف ثالث.
 
-_Your wallet address, combined with an airdropped amount of tokens, is your Gunbot license key._
+عنوان المحفظة الخاص بك ، جنبا إلى جنب مع كمية العملات الموزعة عليك مجانا عند شراء النسخة، هو مفتاح ترخيص Gunbot الخاص بك.
 
 {% hint style="warning" %}
-**You are responsible for your own API keys and GUNTHY wallet.**
+**أنت مسؤول عن مفاتيح API الخاصة بك ومحفظة GUNTHY.**
 
-Please understand that we might not be able to help you if you lose all your registered API keys and \(access to\) your wallet address. Make sure to follow all the security advise when setting up a wallet and properly save and backup the API key\(s\) used for Gunbot.
+يرجى تفهم أننا قد لا نكون قادرين على مساعدتك إذا فقدت جميع مفاتيح API المسجلة الخاصة بك و \(الوصول إلى\) عنوان المحفظة الخاص بك. تأكد من اتباع جميع النصائح الأمنية عند إعداد المحفظة وحفظ مفتاح \(مفاتيح\) API المستخدم في Gunbot ونسخه احتياطيًا بشكل صحيح.
 {% endhint %}
 
-## Registering API keys to a GUNTHY wallet address
+## تسجيل مفاتيح API إلى عنوان محفظة GUNTHY
 
 {% hint style="success" %}
-New users register the wallet address and API keys at time of purchase.
+يقوم المستخدمون الجدد بتسجيل عنوان المحفظة ومفاتيح API في وقت الشراء.
 
-In that case only the wallet address and API keys need to be entered in Gunbot.
+في هذه الحالة ، يجب عليك فقط إدخال عنوان المحفظة ومفاتيح API في Gunbot.
 {% endhint %}
 
-After your reseller registered an [API key](https://github.com/GuntharDeNiro/BTCT/wiki/api) to be used for Gunbot, you can take control and update it yourself.
+بعد تسجيل الموزع \(Reseller\) الخاص بك [مفتاح API](https://github.com/GuntharDeNiro/BTCT/wiki/api) ليتم استخدامه في Gunbot ، يمكنك التحكم وتحديثه بنفسك.
 
-**Step 1: Reseller registers your API key to be used with Gunbot.**
+**الخطوة 1: يقوم الموزع بتسجيل مفتاح API الخاص بك ليتم استخدامه مع Gunbot.**
 
-For every Gunbot license, one exchange API needs to be registered to a GUNTHY wallet address. If you license allows for multiple exchange slots, you can register the others yourself anytime.
+لكل ترخيص Gunbot ، يجب تسجيل API لمنصة واحدة في عنوان محفظة GUNTHY. إذا سمح لك الترخيص بفتحات \(Slots\) منصات متعددة  ، يمكنك تسجيل الباقي في أي وقت.
 
-**Step 2. Create a GUNTHY wallet.**
+**الخطوة 2. إنشاء محفظة GUNTHY.**
 
-GUNTHY is an ERC-20 token, this means that most Ethereum wallets are compatible. You need to use a wallet you own, a wallet address at an exchange will not work.
+عملة GUNTHY تستخدم ترميز ERC-20، وهذا يعني أن معظم محافظ Ethereum متوافقة معها. تحتاج إلى استخدام محفظة تملكها أي تملك مفتاحها الخاص \(Private Key\)، لن يعمل عنوان محفظتك في أي منصة.
 
-Use this smart contract to add the GUNTHY token to your wallet: [https://etherscan.io/address/0x3684b581db1f94b721ee0022624329feb16ab653](https://etherscan.io/address/0x3684b581db1f94b721ee0022624329feb16ab653)
+استخدم هذا العقد الذكي لإضافة الرمز المميز GUNTHY إلى محفظتك:
 
-Contract address: `0x3684b581db1f94b721ee0022624329feb16ab653`
+[https://etherscan.io/address/0x3684b581db1f94b721ee0022624329feb16ab653](https://etherscan.io/address/0x3684b581db1f94b721ee0022624329feb16ab653)
 
-If your wallet software asks about the number of decimals to use for GUNTHY, enter 18.
+عنوان العقد: `0x3684b581db1f94b721ee0022624329feb16ab653`
 
-Read more about the [steps to create a GUNTHY wallet](https://github.com/GuntharDeNiro/BTCT/wiki/api-key-management#steps-to-create-a-gunthy-wallet).
+إذا طلب برنامج محفظتك معرفة عدد الكسور العشرية \(number of decimals\) التي سيتم استخدامها في GUNTHY ، فأدخل 18.
 
-**Step 3a. Enter your exchange API key\(s\)**
+اقرأ المزيد حول [خطوات إنشاء محفظة GUNTHY.](https://github.com/GuntharDeNiro/BTCT/wiki/api-key-management#steps-to-create-a-gunthy-wallet)
 
-Enter your exchange key\(s\) on **Settings &gt; Trading &gt; Exchanges**.
+**الخطوة 3 أ. أدخل مفتاح \(مفاتيح\) المنصة \(Exchange API\) الخاصة بك**
 
-In Gunbot, use your registered API key as master key. Optionally you can use a secondary API key for trading, this key needs to exist in the same exchange account as the registered API.
+أدخل مفتاح \(مفاتيح\) المنصة في **الإعدادات\(Settings\)&gt; التداول\(Trading\)&gt; المنصات\(Exchanges\).**
+
+في Gunbot ، استخدم مفتاح API المسجل كمفتاح رئيسي \(Master Key\). بشكل اختياري ، يمكنك استخدام مفتاح API ثانوي للتداول ، ويجب أن يكون هذا المفتاح موجودًا في نفس حساب المنصة الذي أصدرت منه الـAPI المسجل.
 
 ![](../../../.gitbook/assets/image-15%20%281%29.png)
 
 \*\*\*\*
 
-**Step 3b. Register your GUNTHY wallet address**
+**الخطوة 3 ب. تسجيل عنوان محفظة GUNTHY الخاص بك**
 
-Enter your GUNTHY wallet address on **Settings &gt; Prefences &gt; Gunthy Wallet**.
+أدخل عنوان محفظة GUNTHY الخاصة بك في **إعدادات\(Settings\)&gt; تفضيلات\(Prefences\)&gt; محفظة جانثي\(Gunthy Wallet\).**
 
-Enter **your** GUNTHY wallet address. All of your API keys are then registered to this wallet address.
+أدخل عنوان محفظة GUNTHY **الخاصة بك**. بعد ذلك ، يتم تسجيل جميع مفاتيح API على عنوان المحفظة هذا.
 
-When you add registered keys to Gunbot after already having set your wallet address, the new keys are automatically registered to this wallet.
+عند إضافة مفاتيح مسجلة إلى Gunbot بعد أن قمت بالفعل بتعيين عنوان المحفظة، يتم تسجيل المفاتيح الجديدة تلقائيًا في هذه المحفظة.
 
 ![](../../../.gitbook/assets/image-8.png)
 
 \*\*\*\*
 
-**Step 4. Receive GUNTHY airdrop**
+**الخطوة 4. تسلم إنزال عملة جانثي\(توزيع مجاني GUNTHY Airdrop\)**
 
-After you've registered your wallet address, you'll receive an airdrop with the required amount of tokens for your license type. **Hold these tokens at all times to be sure your Gunbot can run.**
+بعد تسجيل عنوان محفظتك، ستحصل على توزيع مجاني بالعدد المطلوب من عملة جانثي لنوع الترخيص الخاص بك. **احتفظ بهذه العملات طول الوقت للتأكد من أن Gunbot يمكنه أن يعمل، لأنه لن يستطبع العمل في حال خلو محفظتك من الكمية اللازمة منها.**
 
-These are the required amounts per license:
+هذه هي الكميات المطلوبة لكل ترخيص:
 
 * **Starter**: 400 GUNTHY
 * **Standard**: 1000 GUNTHY
 * **Pro**: 1500 GUNTHY
 * **Ultimate**: 2500 GUNTHY
 
-> During the initial roll out of the new license system, airdrops are not yet automatic. Gunbot will work without a token balance until this process is fully tried and tested.
+> خلال الطرح الأولي لنظام الترخيص الجديد، لم تكن عمليات الإنزال \(Airdrops\) أوتوماتيكية بعد. سوف يعمل Gunbot بدون الرصيد المطلوبالعملات في المحفظةرمزي حتى يتم اختبار هذه العملية بشكل كامل واختبارها.
 
-## Updating GUNTHY wallet
+## تحديث محفظة GUNTHY
 
-If you need to switch to another GUNTHY wallet, you can update it on **Settings &gt; Prefences &gt; Gunthy Wallet**.
+إذا كنت بحاجة إلى التبديل إلى محفظة GUNTHY أخرى، فيمكنك تحديثها في **إعدادات\(Settings\)&gt; تفضيلات\(Prefences\)&gt; محفظة جانثي\(Gunthy Wallet\).**
 
-All of your registered API keys connected to the old wallet address will be registered to the new wallet address after updating it.
+سيتم تسجيل جميع مفاتيح API المسجلة المتصلة بعنوان المحفظة القديم في عنوان المحفظة الجديد بعد تحديثه.
 
 ![](../../../.gitbook/assets/image-5.png)
 

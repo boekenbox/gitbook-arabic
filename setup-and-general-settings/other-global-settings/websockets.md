@@ -1,4 +1,4 @@
-# Websockets
+# إعدادات مآخذ الويب \(Websockets\)
 
 Gunbot emits certain data through websockets. Limited documentation for this feature is available on the following repository: [https://github.com/GuntharDeNiro/Gunthy/\#webgui-informations-for-devs-](https://github.com/GuntharDeNiro/Gunthy/#webgui-informations-for-devs-)
 

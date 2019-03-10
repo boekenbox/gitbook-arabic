@@ -1,92 +1,133 @@
-# Connect exchange
+# ربط المنصة
 
-To be able to trade, you need to enter the exchange [API key](creating-api-keys.md) and secret.
+لتتمكن من التداول ، تحتاج إلى إدخال [مفتاح API](https://gunbotbeta.gitbook.io/gunbot-wiki-arabic/~/edit/drafts/-L_ZtHQWpQZB7MnqO2V2/v/arabic/setup-and-general-settings/exchange-and-license-settings/connect-exchange/creating-api-keys) والسيكريت \(Secretٍ\) للمنصة التي تريد أن تتداول فيها.
 
-To enter these, go to **Settings &gt; Trading &gt; Exchanges**.
+لإدخالها، انتقل إلى **الإعدادات\(Settings\)&gt; التداول\(Trading\)&gt; المنصات\(Exchanges\).**
 
 ![](https://user-images.githubusercontent.com/2372008/52206416-707ef380-287a-11e9-8f93-881abdbe9e5b.png)
 
-Select your exchange and fill in all the fields for this exchange.
+اختر المنصة الخاصة بك، ثم قم بملء جميع الحقول لهذا التبادل.
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Field</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">&#x627;&#x644;&#x648;&#x635;&#x641;</th>
+      <th style="text-align:left">&#x627;&#x644;&#x62D;&#x642;&#x644;</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">
+        <p>&#x645;&#x641;&#x62A;&#x627;&#x62D; API &#x627;&#x644;&#x645;&#x633;&#x62C;&#x644;
+          &#x644;&#x64A;&#x62A;&#x645; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645;&#x647;
+          &#x645;&#x639; Gunbot.</p>
+        <p>&#x642;&#x62F; &#x64A;&#x643;&#x648;&#x646; &#x647;&#x630;&#x627; &#x627;&#x644;&#x645;&#x641;&#x62A;&#x627;&#x62D;
+          &#x644;&#x644;&#x642;&#x631;&#x627;&#x621;&#x629; &#x641;&#x642;&#x637;
+          &#x637;&#x627;&#x644;&#x645;&#x627; &#x643;&#x646;&#x62A; &#x62A;&#x633;&#x62A;&#x62E;&#x62F;&#x645;
+          &#x645;&#x641;&#x62A;&#x627;&#x62D;&#x64B;&#x627; &#x645;&#x62E;&#x62A;&#x644;&#x641;&#x64B;&#x627;
+          &#x644;&#x644;&#x62A;&#x62F;&#x627;&#x648;&#x644; &#x627;&#x644;&#x641;&#x639;&#x644;&#x64A;.</p>
+      </td>
       <td style="text-align:left"><b>Master Key</b>
       </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x627;&#x644;&#x633;&#x64A;&#x643;&#x631;&#x64A;&#x62A;(Secret) &#x644;&#x645;&#x641;&#x62A;&#x627;&#x62D;
+        API &#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A;(Master Key).</td>
+      <td
+      style="text-align:left"><b>Master Secret</b>
+        </td>
+    </tr>
+    <tr>
       <td style="text-align:left">
-        <p>The API key registered to be used with Gunbot.</p>
-        <p>This key may have read only access as long as you use a different Key
-          for actual trading.</p>
+        <p>&#x645;&#x641;&#x62A;&#x627;&#x62D; API &#x627;&#x644;&#x645;&#x633;&#x62A;&#x62E;&#x62F;&#x645;
+          &#x641;&#x64A; &#x627;&#x644;&#x62A;&#x62F;&#x627;&#x648;&#x644;&#x60C;
+          &#x64A;&#x645;&#x643;&#x646; &#x623;&#x646; &#x64A;&#x643;&#x648;&#x646;
+          &#x647;&#x648; &#x646;&#x641;&#x633;&#x647; &#x627;&#x644;&#x645;&#x641;&#x62A;&#x627;&#x62D;
+          &#x627;&#x644;&#x645;&#x627;&#x633;&#x62A;&#x631; (Master Key).</p>
+        <p>&#x648;&#x64A;&#x62C;&#x628; &#x623;&#x646; &#x64A;&#x643;&#x648;&#x646;
+          &#x647;&#x630;&#x627; &#x627;&#x644;&#x645;&#x641;&#x62A;&#x627;&#x62D;
+          &#x645;&#x648;&#x62C;&#x648;&#x62F;&#x64B;&#x627; &#x641;&#x64A; &#x646;&#x641;&#x633;
+          &#x62D;&#x633;&#x627;&#x628; &#x627;&#x644;&#x645;&#x646;&#x635;&#x629;
+          &#x627;&#x644;&#x630;&#x64A; &#x623;&#x635;&#x62F;&#x631;&#x62A; &#x645;&#x646;&#x647;
+          &#x627;&#x644;&#x640;API &#x627;&#x644;&#x645;&#x633;&#x62C;&#x644;.</p>
+        <p></p>
       </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Master Secret</b>
-      </td>
-      <td style="text-align:left">The API secret for the Master Key.</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><b>Key</b>
       </td>
-      <td style="text-align:left">
-        <p>The API key used for trading, can be the same as Master Key.</p>
-        <p>This key must exist in the same exchange account as the Master Key.</p>
-      </td>
     </tr>
     <tr>
+      <td style="text-align:left">&#x627;&#x644;&#x633;&#x64A;&#x643;&#x631;&#x64A;&#x62A;(Secret) &#x644;&#x645;&#x641;&#x62A;&#x627;&#x62D;
+        API.</td>
       <td style="text-align:left"><b>Secret</b>
       </td>
-      <td style="text-align:left">The API secret for the Key.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>Delay</b>
-      </td>
       <td style="text-align:left">
-        <p>The delay factor (in seconds) for processing pairs on this exchange.</p>
-        <p>Setting this to 10 should work in almost all cases, you can lower it later
-          to speed up pair processing after you&apos;ve verified that everything
-          works.</p>
+        <p>&#x639;&#x627;&#x645;&#x644; &#x627;&#x644;&#x62A;&#x623;&#x62E;&#x64A;&#x631;
+          (&#x628;&#x627;&#x644;&#x62B;&#x648;&#x627;&#x646;&#x64A;) &#x644;&#x645;&#x639;&#x627;&#x644;&#x62C;&#x629;
+          &#x627;&#x644;&#x623;&#x632;&#x648;&#x627;&#x62C; &#x641;&#x64A; &#x647;&#x630;&#x647;
+          &#x627;&#x644;&#x645;&#x646;&#x635;&#x629;.</p>
+        <p>&#x64A;&#x62C;&#x628; &#x623;&#x646; &#x64A;&#x639;&#x645;&#x644; &#x62A;&#x639;&#x64A;&#x64A;&#x646;
+          &#x647;&#x630;&#x647; &#x627;&#x644;&#x642;&#x64A;&#x645;&#x629; &#x639;&#x644;&#x649;
+          10 &#x641;&#x64A; &#x62C;&#x645;&#x64A;&#x639; &#x627;&#x644;&#x62D;&#x627;&#x644;&#x627;&#x62A;
+          &#x62A;&#x642;&#x631;&#x64A;&#x628;&#x64B;&#x627; &#x60C; &#x648;&#x64A;&#x645;&#x643;&#x646;&#x643;
+          &#x62A;&#x642;&#x644;&#x64A;&#x644;&#x647;&#x627; &#x644;&#x627;&#x62D;&#x642;&#x64B;&#x627;
+          &#x644;&#x62A;&#x633;&#x631;&#x64A;&#x639; &#x645;&#x639;&#x627;&#x644;&#x62C;&#x629;
+          &#x627;&#x644;&#x632;&#x648;&#x62C; &#x628;&#x639;&#x62F; &#x627;&#x644;&#x62A;&#x62D;&#x642;&#x642;
+          &#x645;&#x646; &#x623;&#x646; &#x643;&#x644; &#x634;&#x64A;&#x621; &#x64A;&#x639;&#x645;&#x644;.</p>
+      </td>
+      <td style="text-align:left"><b>Delay</b>
       </td>
     </tr>
   </tbody>
-</table>Some exchanges require extra settings like a passphrase. These are described below.
+</table>تتطلب بعض المنصات إعدادات إضافية مثل عبارة المرور. هذه الإعدادات الإضافية موصوفة بالأسفل
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Field</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">&#x627;&#x644;&#x648;&#x635;&#x641;</th>
+      <th style="text-align:left">&#x627;&#x644;&#x62D;&#x642;&#x644;</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">&#x645;&#x639;&#x631;&#x641; &#x627;&#x644;&#x639;&#x645;&#x64A;&#x644;
+        &#x627;&#x644;&#x62E;&#x627;&#x635; &#x628;&#x643; &#x628;&#x645;&#x646;&#x635;&#x629;
+        CEX. &#x641;&#x642;&#x637; &#x647;&#x648; &#x645;&#x648;&#x62C;&#x648;&#x62F;
+        &#x641;&#x64A; &#x645;&#x646;&#x635;&#x629; CEX.</td>
       <td style="text-align:left"><b>clientId</b>
       </td>
-      <td style="text-align:left">Your CEX client ID. Only relevant for CEX.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>passphrase</b>
-      </td>
+      <td style="text-align:left">&#x639;&#x628;&#x627;&#x631;&#x629; &#x645;&#x631;&#x648;&#x631; API &#x644;&#x645;&#x646;&#x635;&#x629;
+        GDAX. &#x641;&#x642;&#x637; &#x647;&#x648; &#x645;&#x648;&#x62C;&#x648;&#x62F;
+        &#x641;&#x64A; &#x645;&#x646;&#x635;&#x629; GDAX.
+        <br />&#x641;&#x64A; &#x62D;&#x627;&#x644;&#x629; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645;
+        &#x645;&#x641;&#x62A;&#x627;&#x62D; &#x62A;&#x62F;&#x627;&#x648;&#x644;
+        &#x645;&#x62E;&#x62A;&#x644;&#x641; &#x639;&#x646; &#x645;&#x641;&#x62A;&#x627;&#x62D;&#x643;
+        &#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A; &#x60C; &#x62A;&#x623;&#x643;&#x62F;
+        &#x645;&#x646; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x643;&#x644;&#x627;
+        &#x627;&#x644;&#x645;&#x641;&#x62A;&#x627;&#x62D;&#x64A;&#x646; &#x644;&#x639;&#x628;&#x627;&#x631;&#x629;
+        &#x627;&#x644;&#x645;&#x631;&#x648;&#x631; &#x646;&#x641;&#x633;&#x647;&#x627;.</td>
+      <td
+      style="text-align:left"><b>passphrase</b>
+        </td>
+    </tr>
+    <tr>
       <td style="text-align:left">
-        <p>Your GDAX API passphrase. Only relevant for GDAX.</p>
-        <p>
-          <br />In case you use a different trading key than your master key, make sure
-          that both keys use the same passphrase.</p>
+        <p>&#x644;&#x62F;&#x64A;&#x643; &#x639;&#x628;&#x627;&#x631;&#x629; &#x645;&#x631;&#x648;&#x631;
+          &#x627;&#x644;&#x62A;&#x62F;&#x627;&#x648;&#x644; KuCoin. &#x641;&#x642;&#x637;
+          &#x647;&#x648; &#x645;&#x648;&#x62C;&#x648;&#x62F; &#x641;&#x64A; &#x645;&#x646;&#x635;&#x629;
+          KuCoin.</p>
+        <p>&#x641;&#x64A; &#x62D;&#x627;&#x644;&#x629; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645;
+          &#x645;&#x641;&#x62A;&#x627;&#x62D; &#x62A;&#x62F;&#x627;&#x648;&#x644;
+          &#x645;&#x62E;&#x62A;&#x644;&#x641; &#x639;&#x646; &#x645;&#x641;&#x62A;&#x627;&#x62D;&#x643;
+          &#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A; &#x60C; &#x62A;&#x623;&#x643;&#x62F;
+          &#x645;&#x646; &#x627;&#x633;&#x62A;&#x62E;&#x62F;&#x627;&#x645; &#x643;&#x644;&#x627;
+          &#x627;&#x644;&#x645;&#x641;&#x62A;&#x627;&#x62D;&#x64A;&#x646; &#x644;&#x643;&#x644;&#x645;&#x629;
+          &#x627;&#x644;&#x645;&#x631;&#x648;&#x631; &#x646;&#x641;&#x633;&#x647;&#x627;.</p>
       </td>
-    </tr>
-    <tr>
       <td style="text-align:left"><b>password</b>
-      </td>
-      <td style="text-align:left">
-        <p>Your KuCoin trading passphrade. This setting is only relevant for KuCoin.</p>
-        <p>
-          <br />In case you use a different trading key than your master key, make sure
-          that both keys use the same passphrase.</p>
       </td>
     </tr>
   </tbody>
