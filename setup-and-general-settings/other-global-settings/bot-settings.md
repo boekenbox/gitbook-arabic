@@ -1,302 +1,306 @@
 # إعدادات البوت
 
-The bot settings menu lets you change global settings that affect all trading pairs.
+تتيح لك قائمة إعدادات البوت تغيير الإعدادات العامة التي تؤثر على جميع أزواج التداول.
 
-To change them, go to **Settings** &gt; **Bot Settings**.
+لتغييرها، انتقل إلى إعدادات \(**Settings\)**&gt; إعدادات البوت \(**Bot Settings\)**.
 
-![Global bot settings](../../.gitbook/assets/image-19.png)
+![&#x625;&#x639;&#x62F;&#x627;&#x62F;&#x627;&#x62A; &#x627;&#x644;&#x628;&#x648;&#x62A; &#x627;&#x644;&#x639;&#x627;&#x645;&#x629;](../../.gitbook/assets/image-19.png)
 
-## Settings descriptions
+## وصف الإعدادات
 
-Below you'll find detailed descriptions of all available parameters for bot settings. A few advanced settings are only available in the `config.js` file.
+ستجد بالأسفل وصفًا مفصلاً لجميع المعلمات المتاحة \(available parameters\) لإعدادات البوت. تتوفر بعض الإعدادات المتقدمة فقط في ملف الإعدادات `config.js`.
 
-### Watch Mode
+### وضع المراقبة \(Watch Mode\)
 
 {% tabs %}
-{% tab title="Description" %}
-When set to true, Gunbot will process the configured pairs, but will not place actual buy or sell orders. Good for testing.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `WATCH_MODE`
 {% endtab %}
 
-{% tab title="Values" %}
+{% tab title="القيم" %}
+**القيم:** true or false
+
+**القيمة الافتراضية:** false
+{% endtab %}
+
+{% tab title="الوصف" %}
+بتمكين هذا الخيار، سيقوم Gunbot بمعالجة الأزواج التي تم ضيطها وتفعيلها، ولكنه لن يضع أوامر شراء أو بيع فعلية. هذا الوضع جيد للاختبار.
+{% endtab %}
+{% endtabs %}
+
+### عملات أساسية متعددة \(Multiple Base\)
+
+{% tabs %}
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `MULTIPLE_BASE`
+{% endtab %}
+
+{% tab title="القيم" %}
+**القيم:** true or false
+
+**القيمة الافتراضية:** false
+{% endtab %}
+
+{% tab title="الوصف" %}
+استخدم هذا الخيار للتداول في أزواج مع تقاطع بين عملة التسعير\(Quote\) والعملة الأساسية \(Base\) \(على سبيل المثال BTC-ETH وETH-ADA\). 
+
+بتمكين هذا الخيار، لن يبيع Gunbot جميع وحدات عملة التسعير المتاحة عند البيع، وبدلاً من ذلك سيبيع الأموال المستثمرة فقط \(كما هو محدد في حد التداول\). يؤثر هذا الخيار أيضا على الوظيفة الإضافية TradingView.
+
+ قم بتمكين هذا الخيار فقط عندما تحتاج إليه حقًا.
+{% endtab %}
+{% endtabs %}
+
+### تصحيح الأخطاء \(Debug\)
+
+{% tabs %}
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `debug`
+{% endtab %}
+
+{% tab title="القيم" %}
+**القيم:** true or false
+
+**القيمة الافتراضية:** false
+{% endtab %}
+
+{% tab title="الوصف" %}
+بتمكين هذا الخيار، يُستخدم هذا الخيار لعرض رسائل التصحيح في البوت.
+
+استخدم هذا الخيار فقط إذا كنت بحاجة إلى تصحيح شيء ما.
+{% endtab %}
+{% endtabs %}
+
+### المفصَّل \(Verbose\)
+
+{% tabs %}
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `VERBOSE`
+{% endtab %}
+
+{% tab title="القيم" %}
+**القيم:** true or false
+
+**القيمة الافتراضية:** false
+{% endtab %}
+
+{% tab title="الوصف" %}
+تمكين هذا الخيار يؤدي إلى عرض معلومات أكثر تفصيلاً في شاشة التحكم.
+{% endtab %}
+{% endtabs %}
+
+### التراكم العكسي \(Reserve Pile Up\)
+
+{% tabs %}
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `RESERVE_PILE_UP`
+{% endtab %}
+
+{% tab title="القيم" %}
 **Values:** true or false
 
 **Default value:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `WATCH_MODE`
+{% tab title="الوصف" %}
+بتمكين هذا الخيار، ستتم إضافة مكاسب التداول تلقائيًا إلى احتياطي الأموال، وسيتم إبقاؤها خارج التداول الإضافي.
 {% endtab %}
 {% endtabs %}
 
-### Multiple Base
+### مهلة البوت \(Bot Delay\)
 
 {% tabs %}
-{% tab title="Description" %}
-Use this option to trade pairs with cross-over between quote and base \(for example BTC-ETH and ETH-ADA\).
-
-When enabled, Gunbot won't sell all available quote units when selling, instead it will only sell the invested funds \(as defined in the trading limit\). Also affects the TradingView add-on.
-
-Only enable this when you really need it.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `BOT_DELAY`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="القيم" %}
+**القيم:** عددية، وتمثل الوقت بالثواني.
 
-**Default value:** false
+**القيمة الافتراضية:** 1
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `MULTIPLE_BASE`
+{% tab title="الوصف" %}
+سيؤخر البوت معالجة زوج جديد لمدة محددة من الثواني.
+
+وهذا الخيار مفيد عندما يطلب Gunbot البيانات بشكل أسرع مما يسمح به API المنصة القيام به. ونظرًا لأن المهلة المطلوبة تعتمد على عدد الأزواج والسرعة التي يحتاجها النظام الخاص بك لإدارة الأزواج، لا توجد قيم موصى بها.
+
+هذا هو الإعداد العام لمهلة البوت، ويتم تجاهله عند تحديد مهلة محددة للمنصة.
 {% endtab %}
 {% endtabs %}
 
-### Debug
+### منظف البوت \(Bot CClean\)
 
 {% tabs %}
-{% tab title="Description" %}
-Used to show debug messages in the bot, when set to true. Only use this if you really need to debug something.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `BOT_CCLEAN`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="القيم" %}
+**القيم:** عددية، وتمثل الوقت بالساعات.
 
-**Default value:** false
+**القيمة الافتراضية:** 2
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `debug`
-{% endtab %}
-{% endtabs %}
+{% tab title="الوصف" %}
+هذا المعامل يقوم بإجبار التخزين المؤقت لـGunbot ليتم تنظيفه عن طريق إعادة تشغيل البوت كل X ساعة. 
 
-### Verbose
+لا يؤدي هذا الإعداد إلى تشغيل `TRADES_TIMEOUT`.
 
-{% tabs %}
-{% tab title="Description" %}
-Setting this to true will lead to more detailed information being shown in the console.
-{% endtab %}
-
-{% tab title="Values" %}
-**Values:** true or false
-
-**Default value:** false
-{% endtab %}
-
-{% tab title="Name" %}
-Parameter name in `config.js`: `VERBOSE`
-{% endtab %}
-{% endtabs %}
-
-### Reserve Pile Up
-
-{% tabs %}
-{% tab title="Description" %}
-When set to true, trading gains will be automatically added to the funds reserve and be kept out of further trading.
-{% endtab %}
-
-{% tab title="Values" %}
-**Values:** true or false
-
-**Default value:** false
-{% endtab %}
-
-{% tab title="Name" %}
-Parameter name in `config.js`: `RESERVE_PILE_UP`
-{% endtab %}
-{% endtabs %}
-
-### Bot Delay
-
-{% tabs %}
-{% tab title="Description" %}
-Bot will delay processing a new pair for a set amount of seconds.
-
-Useful for when Gunbot requests data faster than the exchange API is allowing you to do. As the needed delay depends on the amount of pairs and the speed your system needs to cycle pairs, there are no recommended values.
-
-This is the global setting for bot delay, it is ignored when an exchange specific delay is set.
-{% endtab %}
-
-{% tab title="Values" %}
-**Values:** numerical – represents time in seconds.
-
-**Default value:** 1
-{% endtab %}
-
-{% tab title="Name" %}
-Parameter name in `config.js`: `BOT_DELAY`
-{% endtab %}
-{% endtabs %}
-
-### Bot CClean
-
-{% tabs %}
-{% tab title="Description" %}
-This parameter forces the Gunbot cache to be cleaned by restarting the bot every x hours. This setting does not trigger `TRADES_TIMEOUT`.
-
-Only set this to a low value when your bot actually has problems not trading after a longer period of use.
-{% endtab %}
-
-{% tab title="Values" %}
-**Values:** numerical – represents time in hours.
-
-**Default value:** 2
-{% endtab %}
-
-{% tab title="Name" %}
-Parameter name in `config.js`: `BOT_CCLEAN`
+قم بتعيين هذا الخيار إلى قيمة منخفضة فقط عندما يواجه البوت الخاص بك بالفعل مشاكل تجعله يقف عن التداول بعد فترة استخدام طويلة.
 {% endtab %}
 {% endtabs %}
 
 ### Interval Ticker Update
 
 {% tabs %}
-{% tab title="Description" %}
-Deprecated
-{% endtab %}
-
-{% tab title="Values" %}
+{% tab title="الاسم" %}
 
 {% endtab %}
 
-{% tab title="Name" %}
+{% tab title="القيم" %}
 
+{% endtab %}
+
+{% tab title="الوصف" %}
+مهمل
 {% endtab %}
 {% endtabs %}
 
 ### Period Storage Ticker
 
 {% tabs %}
-{% tab title="Description" %}
-Deprecated
-{% endtab %}
-
-{% tab title="Values" %}
+{% tab title="الاسم" %}
 
 {% endtab %}
 
-{% tab title="Name" %}
+{% tab title="القيم" %}
 
 {% endtab %}
-{% endtabs %}
 
-### Timeout Buy
-
-{% tabs %}
-{% tab title="Description" %}
-This is an internal timeout that prevents the bot from buying again within the set amount of milliseconds after a buy order has been placed.
-{% endtab %}
-
-{% tab title="Values" %}
-**Values:** numerical – represents time in milliseconds.
-
-**Default value:** 59000
-{% endtab %}
-
-{% tab title="Name" %}
-Parameter name in `config.js`: `timeout_buy`
+{% tab title="الوصف" %}
+مهمل
 {% endtab %}
 {% endtabs %}
 
-### Timeout Sell
+### مهلة الشراء \(Timeout Buy\)
 
 {% tabs %}
-{% tab title="Description" %}
-This is an internal timeout that prevents the bot from selling again within the set amount of milliseconds after a sell order has been placed.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `timeout_buy`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical – represents time in milliseconds.
+{% tab title="القيم" %}
+**القيم:** عددية، وتمثل الوقت بالمللي ثانية.
 
-**Default value:** 60000
+**القيمة الافتراضية:** 59000
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `timeout_sell`
+{% tab title="الوصف" %}
+هذه مهلة داخلية تمنع البوت من الشراء مرة أخرى خلال المدة المحددة من المللي ثانية بعد وضع أمر الشراء.
 {% endtab %}
 {% endtabs %}
 
-### Cancel Orders Enabled
+### مهلة البيع \(Timeout Sell\)
 
 {% tabs %}
-{% tab title="Description" %}
-When set to true, the bot will cancel unfilled or partially filled orders when the price has moved away from the buy or sell price.
-
-Set this to false if you also trade manually to prevent the bot from cancelling your open orders.
-
-**Simulated Fill Or Kill \(FOK\)**
-
-When an order is not or only partially filled and gets cancelled, Gunbot will attempt to fill the order by replacing it at current bid/ask.
-
-For buy orders this means that FOK orders are sent as long as the number of quote units held are worth less than `TRADING_LIMIT` and the difference is higher than `MIN_VOLUME_TO_BUY`.
-
-For sell orders this means that FOK orders are sent as long as the number of quote units held \(minus `KEEP_QUOTE`, if used\) are worth more than `MIN_VOLUME_TO_SELL` and bid is higher than the break-even point.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `timeout_sell`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="القيم" %}
+**القيم:** عددية، وتمثل الوقت بالمللي ثانية.
 
-**Default value:** false
+**القيمة الافتراضية:** 60000
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `CANCEL_ORDERS_ENABLED`
+{% tab title="الوصف" %}
+هذه مهلة داخلية تمنع البوت من البيع مرة أخرى خلال المدة المحددة من المللي ثانية بعد وضع أمر بيع.
 {% endtab %}
 {% endtabs %}
 
-### Cancel Orders Cycle Cap
+### إلغاء الطلبات ممكّنة \(Cancel Orders Enabled\)
 
 {% tabs %}
-{% tab title="Description" %}
-This only applies when using `MAKER_FEES`.
-
-Set the number of rounds that pending orders need to be kept open. After this number of rounds passes, Gunbot will cancel the pending order.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `CANCEL_ORDERS_ENABLED`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical - represents a number of rounds.
+{% tab title="القيم" %}
+**القيم:** true or false
 
-**Default value:** 10
+**القيمة الافتراضية:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `CANCEL_ORDERS_CYCLE_CAP`
+{% tab title="الوصف" %}
+بتمكين هذا الخيار، يقوم البوت بإلغاء الأوامر غير المعبأة أو المملوءة جزئيًا عندما يكون السعر قد ابتعد عن سعر الشراء أو البيع.
+
+عطل هذا الخيار إذا كنت تتداول يدويًا لمنع البوت من إلغاء أوامرك المفتوحة. 
+
+محاكاة أمر التنفيذ أو الإلغاء: **\(FOK\)** \(**Simulated Fill Or Kill\)**
+
+عندما لا يتم ملء الأمر ما أو يتم ملؤه جزئيا، فسيتم إلغاؤه، سيحاول Gunbot ملء الأمر عن طريق استبدال بهذا الأمر بأمر آخر على سعر الطلب/العرض الحالي.
+
+ بالنسبة لأوامر الشراء، هذا يعني أنه يتم إرسال أوامر FOK طالما أن عدد وحدات عملة التسعير\(Quote\) المحتفظ بها أقل من `TRADING_LIMIT`، وأن الفرق أكبر من `MIN_VOLUME_TO_BUY`. 
+
+وبالنسبة لأوامر البيع، هذا يعني أنه يتم إرسال أوامر FOK طالما أن عدد وحدات عملة التسعير\(Quote\) المحتفظ بها \(مطروحا منها `KEEP_QUOTE`، إذا تم استخدامها\) أكثر من `MIN_VOLUME_TO_SELL`، وأن عرض التسعير \(bid \)  أعلى من نقطة التعادل \(break-even point\).
 {% endtab %}
 {% endtabs %}
 
-### Withdraw Address
+### سقف دورة إلغاء الأوامر \(Cancel Orders Cycle Cap\)
 
 {% tabs %}
-{% tab title="Description" %}
-Set a valid BTC wallet address to enable automatic withdraws each time the threshold is reached.
-
-Please use this feature on your own risk only.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `CANCEL_ORDERS_CYCLE_CAP`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** string
+{% tab title="القيم" %}
+**القيم:** عددية، وتمثل عدد الجولات
 
-**Default value:** YOURBTCADDRESSHERE
+**القيمة الافتراضية:** 10
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `withdraw_address`
+{% tab title="الوصف" %}
+ينطبق هذا الخيار عند استخدام `MAKER_FEES` فقط. 
+
+اضبط عدد الجولات التي يجب أن تظل الأوامر المعلقة مفتوحة. بعد مرور هذا العدد من الجولات ، سيقوم Gunbot بإلغاء الأمر المعلق.
 {% endtab %}
 {% endtabs %}
 
-### Withdraw Threshold
+### عنوان السحب \(Withdraw Address\)
 
 {% tabs %}
-{% tab title="Description" %}
-Set the amount of BTC to be accumulated with `RESERVE_PILE_UP` before an automatic withdraw will be executed.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `withdraw_address`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical - represents an amount of BTC
+{% tab title="القيم" %}
+**القيم:** string
 
-**Default value:** 0.5
+**القيمة الافتراضية:** YOURBTCADDRESSHERE
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `withdraw_threshold`
+{% tab title="الوصف" %}
+قم بتعيين عنوان محفظة BTC صالح لتمكين عمليات السحب التلقائية في كل مرة يتم فيها الوصول إلى الحد. 
+
+يرجى استخدام هذه الميزة على مسؤوليتك الخاصة فقط.
+{% endtab %}
+{% endtabs %}
+
+### حد السحب \(Withdraw Threshold\)
+
+{% tabs %}
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `withdraw_threshold`
+{% endtab %}
+
+{% tab title="القيم" %}
+**القيم:** عددية، وتمثل الكمية بال BTC
+
+**القيمة الافتراضية:** 0.5
+{% endtab %}
+
+{% tab title="الوصف" %}
+يضبط مقدار BTC ليتم تجميعه مع `RESERVE_PILE_UP` قبل تنفيذ السحب التلقائي.
 {% endtab %}
 {% endtabs %}
 

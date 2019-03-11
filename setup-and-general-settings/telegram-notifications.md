@@ -35,27 +35,21 @@
 {% endtab %}
 
 {% tab title="الوصف" %}
-تمكين هذا لجعل Gunbot يرسل إشعارات التداول عبر Telegram.
+تمكين هذا الخيار لجعل Gunbot يرسل إشعارات التداول عبر Telegram.
 {% endtab %}
 {% endtabs %}
 
 ### اسم الشهرة \(Bot Nickname\)
 
 {% tabs %}
-{% tab title="Description" %}
-Each trade notification starts with the nickname set here.
-
-Use this to easily check from which bot instance the notifications have been sent.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `TELEGRAM_NICK`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** string
+{% tab title="القيم" %}
+**القيم:** string
 
-**Default value:** Gunbot
-{% endtab %}
-
-{% tab title="Name" %}
-Parameter name in `config.js`: `TELEGRAM_NICK`
+**القيمة الافتراضية:** Gunbot
 {% endtab %}
 
 {% tab title="الوصف" %}
@@ -65,113 +59,113 @@ Parameter name in `config.js`: `TELEGRAM_NICK`
 {% endtab %}
 {% endtabs %}
 
-### Token
+### رمز البوت \(Token Id\)
 
 {% tabs %}
-{% tab title="Description" %}
-The Telegram token for your bot.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `TOKEN`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** string
+{% tab title="القيم" %}
+**القيم:** string
 
-**Default value:** YOURTOKEN
+**القيمة الافتراضية:** YOURTOKEN
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `TOKEN`
+{% tab title="الوصف" %}
+الرمز المميز لبوت التليجرام الخاص بك.
 {% endtab %}
 {% endtabs %}
 
-### Chat ID
+### معرف الدردشة \(Chat ID\)
 
 {% tabs %}
-{% tab title="Description" %}
-The Chat ID for your bot to send its messages to.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `chat_id`
+{% endtab %}
 
-**Valid options:**
+{% tab title="القيم" %}
+**القيم:** string
+
+**القيمة الافتراضية:** 123456789
+{% endtab %}
+
+{% tab title="الوصف" %}
+معرف الدردشة لبوت التليجرام الخاص بك لإرسال رسائله إليه.
+
+**الخيارات الصالحة:**
 
 _**"12345"**_
 
-A positive integer, to send messages directly to a telegram user. Use this method when you just want to receive notifications for your personal use.
+عدد صحيح موجب لإرسال الرسائل مباشرة إلى مستخدم تليجرام. استخدم هذه الطريقة عندما تريد فقط تلقي الإشعارات لاستخدامك الشخصي.
 
-To find your telegram id, send /start to @MyTelegramID\_bot and it will respond with your ID.
+للعثور على معرف الدردشة الخاص بك، أرسل /start إلى @MyTelegramID\_bot، وسيقوم بالرد باستخدام المعرف الخاص بك.
 
 _**"-12345"**_
 
-A negative integer, to send messages to a group chat.
+عدد صحيح سلبي ، لإرسال رسائل إلى دردشة جماعية.
 
-The easiest way to obtain a groups id, is to open [https://web.telegram.org](https://web.telegram.org) login, and navigate to the group. Now pay attention to the URL, you should see something like [https://web.telegram.org/\#/im?p=g12345](https://web.telegram.org/#/im?p=g12345) - the number after the p=g part is the group id.
+أسهل طريقة للحصول على معرف المجموعة هي فتح [https://web.telegram.org](https://web.telegram.org) تسجيل الدخول، والانتقال إلى المجموعة. والآن انتبه إلى عنوان URL ، يجب أن ترى شيئًا مثل: [https://web.telegram.org/\#/im?p=g12345](https://web.telegram.org/#/im?p=g12345) - الرقم بعد p=g هو معرف المجموعة.
 
-This must be listed in chat\_id with a - symbol in front, in this case "-12345"
-{% endtab %}
-
-{% tab title="Values" %}
-**Values:** string
-
-**Default value:** 123456789
-{% endtab %}
-
-{% tab title="Name" %}
-Parameter name in `config.js`: `chat_id`
+يجب إدراج هذا المعرف في معرف الدردشة \(chat\_id\) مع رمز \( - \) في أوله،  مثل: "-12345"
 {% endtab %}
 {% endtabs %}
 
-### TG PL Only
+### إشعارات الربح/الخسارة فقط \(TG PL Only\)
 
 {% tabs %}
-{% tab title="Description" %}
-When enabled notifications will be only sent for strategy sell orders.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `TG_PL_ONLY`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="القيم" %}
+**القيم:** true or false
 
-**Default value:** false
+**القيمة الافتراضية:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `TG_PL_ONLY`
+{% tab title="الوصف" %}
+تمكين هذا الخيار لإرسال الإشعارات لأوامر البيع فقط.
 {% endtab %}
 {% endtabs %}
 
-### Telegram Order Timeout
+### مهلة طلب بوت التليجرام \(Telegram Order Timeout\)
 
 {% tabs %}
-{% tab title="Description" %}
-When set above 0, you'll receive a Telegram dialog to manually allow or deny every order Gunbot wants to place.
-
-During the set amount of seconds you can choose to allow the order \(and it will immediately be placed\) or deny it. After the timeout passes without reply, the order will be placed at the exchange.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `TG_PL_ONLY`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical, represent time in seconds.
+{% tab title="القيم" %}
+**القيم:** عددية، وتمثل الوقت بالثواني.
 
-**Default value:** 0
+**القيمة الافتراضية:** 0
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `TG_PL_ONLY`
+{% tab title="الوصف" %}
+عند التعيين فوق 0، ستتلقى مربع حوار تليجرام للسماح يدويا أو رفض كل طلب يريده Gunbot.
+
+خلال المدة المحددة بالثواني، يمكنك اختيار السماح بالطلب \(وسيتم وضعه على الفور\) أو رفضه. بعد انتهاء المهلة دون رد، سيتم وضع الطلب في المنصة.
 {% endtab %}
 {% endtabs %}
 
-### TG Test
+### اختبار بوت التليجرام \(TG Test\)
 
 {% tabs %}
-{% tab title="Description" %}
-Enable this to test if your Telegram bot is working.
-
-A test message will be sent on the first round for each pair. Disable after verifying your bot works.
+{% tab title="الاسم" %}
+اسم المعلمة \(Parameter name\) في ملف الإعدادات `config.js`: `TG_TEST`
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="القيم" %}
+**القيم:** true or false
 
-**Default value:** false
+**القيمة الافتراضية:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `TG_TEST`
+{% tab title="الوصف" %}
+تمكين هذا الخيارلاختبار ما إذا كان بوت التليجرام يعمل أم لا.
+
+سيتم إرسال رسالة اختبار في الجولة الأولى لكل زوج. يمكنك تعطيله بعد التحقق من أن البوت يعمل.
 {% endtab %}
 {% endtabs %}
 
