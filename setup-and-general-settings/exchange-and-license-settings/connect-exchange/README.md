@@ -1,10 +1,14 @@
+---
+description: How to connect Gunbot to your exchange account.
+---
+
 # Connect exchange
 
-To be able to trade, you need to enter the exchange [API key](creating-api-keys.md) and secret.
+To be able to trade, you need to enter the exchange [API key](creating-api-keys.md) and secret, as well as the trading fees level for each exchange.
 
 To enter these, go to **Settings &gt; Trading &gt; Exchanges**.
 
-![](https://user-images.githubusercontent.com/2372008/52206416-707ef380-287a-11e9-8f93-881abdbe9e5b.png)
+![](../../../.gitbook/assets/image%20%2824%29.png)
 
 Select your exchange and fill in all the fields for this exchange.
 
@@ -21,6 +25,11 @@ Select your exchange and fill in all the fields for this exchange.
       </td>
       <td style="text-align:left">
         <p>The API key registered to be used with Gunbot.</p>
+        <p>
+          <br /><b>This is the key you&apos;ve registered during an order, or have entered on the &quot;swap exchanges&quot; page. Each exchange has it&apos;s own master key.</b>
+          <br
+          />
+        </p>
         <p>This key may have read only access as long as you use a different Key
           for actual trading.</p>
       </td>
@@ -80,14 +89,51 @@ Select your exchange and fill in all the fields for this exchange.
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>password</b>
+      <td style="text-align:left"><b>passphrase</b>
       </td>
       <td style="text-align:left">
-        <p>Your KuCoin trading passphrade. This setting is only relevant for KuCoin.</p>
+        <p>Your KuCoin API passphrase. This setting is only relevant for KuCoin.</p>
         <p>
           <br />In case you use a different trading key than your master key, make sure
           that both keys use the same passphrase.</p>
       </td>
     </tr>
   </tbody>
-</table>
+</table>### Trading Fees
+
+{% tabs %}
+{% tab title="Description" %}
+This sets the trading fees paid to the exchange. Gunbot uses this data to calculate the break-even point.
+
+Does your exchange charge 0.25% fees per trade? Then set this to 0.25. When your exchange has different fees for different types of trades, set the average fees per trade.
+
+Trading fees are reflected in the average bought price. Exchanges only calculate fees after the trade comes in, Gunbot needs to know about fees before the trade is sent to the exchange.
+
+{% hint style="info" %}
+This parameter is irrelevant for trading at Bitmex.
+{% endhint %}
+{% endtab %}
+
+{% tab title="Values" %}
+**Values:** numerical – represents a percentage
+
+**Default value:** 0.25
+{% endtab %}
+
+{% tab title="Order types" %}
+| Affects | Does not affect |
+| :--- | :--- |
+| Strategy sell | Strategy buy |
+| Stop limit | RT buy |
+| RT buyback | RT sell |
+|  | DCA buy |
+|  | Close |
+{% endtab %}
+
+{% tab title="Name" %}
+Parameter name in `config.js`: `TRADING_FEES`
+{% endtab %}
+{% endtabs %}
+
+
+
