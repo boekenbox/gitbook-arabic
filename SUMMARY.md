@@ -2,14 +2,14 @@
 
 * [مرحبا بكم في موسوعة Gunbot النسخة العربية](README.md)
 
-## حول البرنامج
+## حول البرنامج <a id="about"></a>
 
 * [ما الجديد في الإصدار 12؟](about/whats-new-v12.md)
 * [كيف تشتري Gunbot](about/resellers.md)
 * [المنصات المدعومة](about/supported-exchanges.md)
 * [متطلبات التشغيل](about/system-requirements.md)
 
-## التهيئة والإعدادات العامة
+## التهيئة والإعدادات العامة <a id="setup-and-general-settings"></a>
 
 * [التثبيت وبدء التشغيل](setup-and-general-settings/installation/README.md)
   * [تحميل البرنامج](setup-and-general-settings/installation/download.md)

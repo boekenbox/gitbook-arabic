@@ -1,32 +1,42 @@
 # إعدادات واجهة المستخدم الرسومية
 
-## GUI settings
+## إعدادات واجهة المستخدم الرسومية \(GUI settings\)
 
-The GUI Notifications menu lets you change which notifications are shown.
+تتيح لك قائمة إشعارات واجهة المستخدم الرسومية إمكانية تغيير الإشعارات التي يتم عرضها.
 
-To change them, go to **Settings** &gt; **GUI Notifications**.
+لتغييرها، انتقل إلى إعدادات \(**Settings\)** &gt; إشعارات واجهة المستخدم الرسومية \(**GUI Notifications\).**
 
 ![](../../.gitbook/assets/image-21%20%281%29.png)
 
-### Settings descriptions
+### وصف الإعدادات
 
-Below you'll find detailed descriptions of all available parameters for GUI settings. A few advanced settings are only available in the `config.js` file.
+ستجد بالأسفل وصفًا مفصلاً لجميع المعلمات المتاحة \(available parameters\) لإعدادات البوت. تتوفر بعض الإعدادات المتقدمة فقط في ملف الإعدادات `config.js`.
 
-#### Callback Messages
+#### رسائل الاستدعاء \(Callback Messages\)
 
 {% tabs %}
-{% tab title="Description" %}
+{% tab title="الاسم" %}
+
+
+Parameter name in `config.js`: `callback`
+
+
+
 Set this to true to receive callback notifications in the GUI.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="القيم" %}
+**القيم:** true or false
 
-**Default value:** false
+**القيمة الافتراضية:** false
 {% endtab %}
 
 {% tab title="Name" %}
 Parameter name in `config.js`: `callback`
+{% endtab %}
+
+{% tab title="الوصف" %}
+تفعيل هذا الخبار لتلقي إشعارات الاستدعاء في واجهة المستخدم الرسومية.
 {% endtab %}
 {% endtabs %}
 
