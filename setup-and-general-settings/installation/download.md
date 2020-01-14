@@ -1,7 +1,3 @@
----
-description: Up to date download locations for Gunbot.
----
-
 # Download software
 
 {% hint style="info" %}

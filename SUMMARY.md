@@ -4,19 +4,10 @@
 
 ## About
 
-* [What's new?](about/whats-new/README.md)
-  * [New in v15](about/whats-new/new-in-v15.md)
-  * [New in v13 / v14](about/whats-new/new-in-v13-v14.md)
-  * [New in v12](about/whats-new/new-in-v12.md)
-  * [New in v11](about/whats-new/new-in-v11.md)
-  * [New in v10](about/whats-new/new-in-v10.md)
-  * [New in v9](about/whats-new/new-in-v9.md)
-  * [New in v8](about/whats-new/new-in-v8.md)
-  * [New in v7](about/whats-new/new-in-v7.md)
-  * [New in v6](about/whats-new/new-in-v6.md)
+* [What's new in v12?](about/whats-new-v12.md)
+* [How to purchase Gunbot](about/resellers.md)
 * [Supported exchanges](about/supported-exchanges.md)
 * [System requirements](about/system-requirements.md)
-* [Purchasing Gunbot](https://gunthy.org/resellers)
 
 ## Setup & general settings
 
@@ -29,20 +20,18 @@
   * [How to enable SSL/TLS](setup-and-general-settings/installation/enable-ssl-tls.md)
   * [Running multiple instances](setup-and-general-settings/installation/running-multiple-instances.md)
   * [Headless mode](setup-and-general-settings/installation/headless-mode.md)
-* [Preferences](setup-and-general-settings/preferences/README.md)
-  * [Bot settings](setup-and-general-settings/preferences/bot-settings.md)
-  * [Authentication](setup-and-general-settings/preferences/authentication.md)
-  * [GUI notifications](setup-and-general-settings/preferences/gui-notifications.md)
-  * [Websockets](setup-and-general-settings/preferences/websockets.md)
-  * [Telegram notifications](setup-and-general-settings/preferences/telegram-notifications.md)
-  * [TradingView \(add-on\)](setup-and-general-settings/preferences/tradingview-add-on.md)
-  * [IMAP listener](setup-and-general-settings/preferences/imap-listener.md)
+* [Authentication](setup-and-general-settings/authentication.md)
 * [Exchange & license settings](setup-and-general-settings/exchange-and-license-settings/README.md)
-  * [GUNTHY wallet](setup-and-general-settings/exchange-and-license-settings/gunthy-wallet/README.md)
+  * [Register GUNTHY wallet](setup-and-general-settings/exchange-and-license-settings/gunthy-wallet/README.md)
     * [How to create a wallet](setup-and-general-settings/exchange-and-license-settings/gunthy-wallet/how-to-create-a-wallet.md)
   * [Connect exchange](setup-and-general-settings/exchange-and-license-settings/connect-exchange/README.md)
     * [Swap exchanges](setup-and-general-settings/exchange-and-license-settings/connect-exchange/api-slots.md)
     * [Creating API keys](setup-and-general-settings/exchange-and-license-settings/connect-exchange/creating-api-keys.md)
+* [Telegram notifications](setup-and-general-settings/telegram-notifications.md)
+* [Other global settings](setup-and-general-settings/other-global-settings/README.md)
+  * [Bot settings](setup-and-general-settings/other-global-settings/bot-settings.md)
+  * [GUI settings](setup-and-general-settings/other-global-settings/gui-settings.md)
+  * [Websockets](setup-and-general-settings/other-global-settings/websockets.md)
 
 ## How to work with Gunbot
 
@@ -57,7 +46,6 @@
   * [Strategy configurator](how-to-work-with-gunbot/editing-strategies-and-pairs/strategy-configurator.md)
   * [Trading pairs](how-to-work-with-gunbot/editing-strategies-and-pairs/trading-pairs.md)
 * [Monitoring](how-to-work-with-gunbot/monitoring.md)
-* [AutoConfig](how-to-work-with-gunbot/autoconfig.md)
 
 ## Trading strategy options
 
@@ -102,11 +90,12 @@
 * [TrailMe](trading-strategy-options/trailme.md)
 * [Misc settings](trading-strategy-options/misc-settings.md)
 
-## Extras
+## Add-ons
 
-* [Backtesting](extras/backtesting-add-on.md)
-* [TradingView](https://wiki.gunthy.org/setup-and-general-settings/preferences/tradingview-add-on)
-* [CryptoSight](https://wiki.gunthy.org/setup-and-general-settings/preferences/telegram-notifications)
+* [TradingView](add-ons/tradingview-add-on/README.md)
+  * [IMAP listener](add-ons/tradingview-add-on/imap-listener.md)
+* [Backtesting](add-ons/backtesting-add-on.md)
+* [Cryptosight](add-ons/cryptosight-add-on.md)
 
 ## Various
 

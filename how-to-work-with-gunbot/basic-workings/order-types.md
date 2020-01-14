@@ -1,7 +1,3 @@
----
-description: Different order types in Gunbot
----
-
 # Order types
 
 Throughout this wiki you will notice that some settings apply to specific "order types". The table below explains these order types.

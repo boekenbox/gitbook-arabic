@@ -1,7 +1,3 @@
----
-description: Information about running Gunbot in headless mode.
----
-
 # Headless mode
 
 {% hint style="info" %}
@@ -20,7 +16,11 @@ When the config file is overwritten while Gunbot is running, the changed setting
 
 Make sure that no parameters are removed when setting it up. Make sure the JSON-formatting stays intact. If you are unsure about your config file, you can validate it on [https://jsonlint.com](https://jsonlint.com) \(or a similar JSON validator\).
 
-The only actions that requires using the GUI is updating master keys.
+The only actions that require using the GUI are:
+
+* Updating master keys
+* Updating the GUNTHY wallet address
+* Transferring the software license to a third party
 
 ## Disabling the GUI
 

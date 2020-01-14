@@ -1,7 +1,3 @@
----
-description: Different protection options in different strategies.
----
-
 # Protections
 
 Trading methods have a few common protections:

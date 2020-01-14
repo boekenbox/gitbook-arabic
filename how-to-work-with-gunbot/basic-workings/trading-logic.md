@@ -1,7 +1,3 @@
----
-description: Essential info about what to expect when working with Gunbot.
----
-
 # Trading logic
 
 ## Gunbot does what you tell it to do
