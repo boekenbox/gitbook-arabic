@@ -1,3 +1,7 @@
+---
+description: Requirements when creating a new API key at supported exchanges.
+---
+
 # Creating API keys
 
 To use Gunbot you need to create an API key at your exchange.
@@ -22,15 +26,11 @@ This page shows the minimum required settings per exchange to create a working A
 
 ## Bittrex
 
-![](https://user-images.githubusercontent.com/2372008/41608793-a2eecc6e-73e9-11e8-8535-693c9fb48e90.png)
+![](../../../.gitbook/assets/photo_2019-08-12_18-36-10.jpg)
 
 ## CEX
 
 ![](https://user-images.githubusercontent.com/2372008/41608794-a3136f1a-73e9-11e8-9785-40bc7b28c4cc.png)
-
-## Cryptopia
-
-![](https://user-images.githubusercontent.com/2372008/41608795-a3382698-73e9-11e8-8b42-a8e6974f6631.png)
 
 ## Coinbase Pro
 
@@ -42,7 +42,7 @@ This page shows the minimum required settings per exchange to create a working A
 
 ## Kraken
 
-![](https://user-images.githubusercontent.com/2372008/41608797-a3892250-73e9-11e8-930a-aac6d5dc9c1d.png)
+![](../../../.gitbook/assets/image%20%2818%29.png)
 
 ## Kucoin
 

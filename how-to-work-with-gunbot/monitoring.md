@@ -1,3 +1,7 @@
+---
+description: Options for monitoring trading performance.
+---
+
 # Monitoring
 
 Monitoring and evaluating your trades is an important aspect of bot trading. Gunbot makes it easy to visualize the trades it makes, this will help you to keep improving your trading strategies.
@@ -8,7 +12,7 @@ The built in charts exclusively use data available to the Gunbot Core. You can l
 
 Charts go as far back as the exchange API returns candles to your bot.
 
-![](../.gitbook/assets/image-2%20%281%29.png)
+![](../.gitbook/assets/image-2.png)
 
 ## Dashboard
 
@@ -22,5 +26,5 @@ The pair overview quickly shows you which of your trading pairs are doing good.
 
 The trading map gives you instant information about how your pairs are doing.
 
-![](../.gitbook/assets/image-20%20%281%29.png)
+![](../.gitbook/assets/image-20.png)
 
